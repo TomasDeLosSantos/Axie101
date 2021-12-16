@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+/*
+colors{
+    midnight blue: #001f3d
+    navy blue: #045174
+    desert sun: #d89c60
+    burnt orange: #e87a00
+}*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*background-color: #D89C60;*/
+    font-family: 'Quicksand', sans-serif;
+    text-decoration: none;
+}
+
+/*------NAV------*/
+
+.nav__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem;
+}
+.nav__ul, .nav__li{
+    display: inline-block;
+}
+
+.nav__li a{
+    color: #045174;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    margin: 1rem;
+}
+
+.nav__li a:hover{
+    border-bottom: solid #001f3d;
+}
+
+.contact__btn{
+    background-color: #E87A00;
+    color: #045174;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    margin: 1rem;
+}
+
+.logo{
+    width: 6rem;
+    height: 6rem;
+    margin: 1rem;
+}
+
+/*------NAV------*/
+
+/*------FOOTER------*/
+
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+.footer__axie, .footer__web{
+    display: flex;
+}
+
+.footer__axieList{
+    margin: 1rem;
+    list-style: none;
+}
+
+.footer__webList{
+    margin: 1rem;
+    list-style: none;
+}
+
+/*------FOOTER------*/
+
+/*------HERO------*/
+
+.hero__container{
+    /*   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    */
+    margin: 1rem;
+}
+.hero__title, .hero__para, .hero__btn{
+    text-align: center;
+    margin: 0.5rem;
+}
+
+.hero__para{
+    text-align: center;
+}
+
+.btn{
+    display: block;
+    width: fit-content;
+    background-color: #E87A00;
+    color: #045174;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    margin: 1rem auto 1rem auto;
+}
+
+.hero__btn{
+    top: 22rem;
+    left: 1rem;
+}
+
+/*------HERO------*/
+
+/*------GAME SECTION------*/
+
+.gameSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gameSection > article, .gameSection__video{
+    text-align: center;
+    width: 30vw;
+    margin: 3rem 1.5rem 3rem 1.5rem;
+}
+
+/*------GAME SECTION------*/
+
+/*------AXIE SECTION------*/
+
+.axieSection__title, .axieSection__para, .example__para{
+    text-align: center;
+    margin: 1rem;
+}
+
+.axieSection__examples{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.example__img{
+    height: 300px;
+    width: 400px;
+}
+
+/*------AXIE SECTION------*/
+
+/*------SERVICE SECTION------*/
+
+.serviceSection{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+.serviceSection__pvp, .serviceSection__econ, .serviceSection__becas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33vw;
+    margin: 1rem;
+}
+
+/*------SERVICE SECTION------*/
+
+/* GENERAL.HTML */
+/*------A------*/
+
+.statistics__header{
+    text-align: center;
+}
+
+.statistics__items{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.statistics__items > div{
+    margin: 2rem;
+    width: 25vw;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "title1 text1 text1"
+        "img1 img2 img3"
+        "title2 text2 text2";
+    text-align: center;
+    align-items: center;
+    justify-content: center;  
+}
+.tiebrak__title{
+    grid-area: title1;
+    align-self: left;
+}
+.tiebreak__para{
+    grid-area: text1;
+    margin-right: 5rem;
+}
+
+.example__img1{
+    grid-area: img1;
+}
+.example__img2{
+    grid-area: img2;
+}
+.example__img3{
+    grid-area: img3;
+}
+
+.card__title{
+    grid-area: title2;
+}
+
+.card__para{
+    grid-area: text2;
+    
+    margin-right: 5rem;
+}
+
+.adv__title{
+    text-align: center;
+    margin: 2rem;
+}
+
+.energy{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 1rem;
+}
+
+.energy__title{
+    align-self: left;
+}
+.energy__para{
+    width: 60vw;
+}
+
+.exp{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 1rem;
+}
+
+.exp__title{
+    align-self: right;
+}
+.exp__para{
+    width: 60vw;
+}
+
+.lvl__table{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lvl__img{
+    padding: 2rem;
+    width: 900px;
+}
+
+.bans__title{
+    text-align: center;
+}
+.bans{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 1rem 2rem 3rem 2rem;
+}
+.bans>div{
+    margin: 1rem;
+}
+
+.scholar{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.scholar>*{
+    padding: 0.5rem;
+}
+
+.scholar__video{
+    width: 30vw;
+}
+
+.how, .needs, .where, .guilds, .myScholar, .ourScholar{
+    margin: 1rem;
+}
+
+.guilds__container{
+    display: flex;
+}
+
+.myScholar{
+    text-align: center;
+}
+.myScholar__cont{
+    display: inline-block;
+    width: 40vw;
+    padding: 2rem;
+}
+.myScholar__img{
+    margin: 1rem;
+}
+
+.ourScholar{
+    text-align: center;
+}
+.ul__cont{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 2rem 0rem 2rem 0rem;
+}
+.breed{
+    margin: 1rem;
+}
+.breed__title{
+    text-align: center;
+}
+
+.breed__para, .breed__img{
+    display: inline-block;
+    width: 40vw;
+    padding: 0.5rem;
+}
+
+.coins{
+    margin: 1rem;
+    text-align: center;
+}
+
+.coins__flex{
+    display: flex;
+}
+
+.roi{
+    margin: 1rem;
+}
+.roi__title{
+    text-align: center;
+}
+.roi__flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.roi__img{
+    height: 100px;
+    width: 40rem;
+}
+
+.risk{
+    margin: 1rem;
+}
+.risk__title{
+    text-align: center;
+}
+.risk__title--right{
+    text-align: end;
+}
+.tree__flex{
+    display: flex;
+}
+.stake__flex{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 1rem;
+}
+.stake__flex>div>p{
+    width: 40vw;
+}
+
+.combat{
+    margin: 1rem;
+}
+.combat__title{
+    text-align: center;
+}
+.rewards{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 2rem 0rem 2rem 0rem;
+}
+.rewards__para{
+    padding: 1rem;
+}
+.slpTable__flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slpTable__img{
+    width: 500px;
+    padding: 2rem;
+}
+.types{
+    margin: 1rem;
+}
+.types__title{
+    text-align: center;
+}
+.types__flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.types__para{
+    margin-left: 2rem;
+}
+.types__flex>div{
+    margin-top: 2rem;
+}
+.morale{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 1rem;
+}
+.lastStand, .crit{
+    padding: 1rem;
+}
+.buff{
+    margin: 1rem;
+}
+.buff__title{
+    text-align: center;
+}
+.buff__grid{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto;
+    align-items: center;
+    justify-content: center;
+}
+.buff__grid>*{
+    padding: 1rem 0rem 1rem 0rem;
+}
+.buff__info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.comp{
+    margin: 1rem;
+}
+.comp__title{
+    text-align: center;
+}
+.comp__example{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.comp__cont{
+    display: flex;
+    align-items: center;
+    justify-items: space-between;
+}
+.trend__title{
+    text-align: center;
+}
+.trend{
+    margin: 1rem;
+}
+.trend__flex{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin: 1rem 0rem 1rem 0rem;
+}
