@@ -52,18 +52,22 @@ colors{
 
 .contact__btn{
     background-color: #00E0B5;
-    color: #042860;
+    background-image: linear-gradient(45deg, rgba(255,0,108,1) 25%, rgba(4,40,96,1) 50%);
+    background-size: 500%;
+    background-position: right;
+    color: #fff;
     border-radius: 50px;
     font-size: 1rem;
     font-weight: 700;
     padding: 0.5rem 1rem 0.5rem;
     margin: 1rem;
-    box-shadow: 0rem 0rem 0.5rem #fff;
+    /*box-shadow: 0rem 0rem 0.5rem #fff;*/
+    transition: 1s background-position;
 }
 .contact__btn:hover{
-    box-shadow: 0rem 0rem 0.8rem #fff;
+    /*box-shadow: 0rem 0rem 0.8rem #fff;*/
     color: #fff;
-    transition: 0.1s all;
+    background-position: left;
 }
 
 .logo{
