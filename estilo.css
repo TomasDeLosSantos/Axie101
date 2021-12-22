@@ -721,7 +721,7 @@ colors{
 }
 
 
-@media screen and (max-width:360px){
+@media screen and (max-width:800px){
     .nav__li>a{
         font-size: 0.9rem;
         margin: 0rem 0rem 0rem 0.2rem;
@@ -837,5 +837,142 @@ colors{
     }
     .stake__flex>div>p{
         width: auto;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 800px) {
+    .hero__container{
+        flex-direction: column;
+        height: 50rem; 
+    }
+    .hero__data>*{
+        margin: 0rem;
+    }
+    .hero__title{
+        text-align: center;
+        font-size: 2.5rem;
+        margin-top: 2rem;
+    }
+    .hero__para{
+        text-align: center;
+        width: 100vw;
+        align-self: center;
+        font-size: 1.1rem;
+        margin: 0.5rem;
+    }
+    .hero__btn{
+        margin: 1rem auto 1rem auto;
+    }
+    .hero__img{
+        width: 100vw;
+    }
+    .hero__data{
+        width: fit-content;
+    }
+
+    .gameSection{
+        height: auto;
+    }
+    .gameSection>div>article{
+        margin: 0rem;
+    }
+    .gameSection__title{
+        font-size: 2.5rem;
+        text-align: center;
+        line-height: 1.1;
+    }
+    .gameSection__para{
+        text-align: center;
+        font-size: 1.1rem;
+    }
+    .gameSection__img{
+        display: none;
+    }
+    .gameSection__video{
+        width: auto;
+        margin: 2rem 0rem 0rem 0rem;
+    }
+
+    .axieSection{
+        height: auto;
+        padding-bottom: 2rem;
+    }
+    .axieSection__title{
+        font-size: 2.5rem;
+        text-align: center;
+        line-height: 1.1;
+        margin-top: 2rem;
+    }
+    .axieSection__para{
+        text-align: center;
+        font-size: 1.1rem;
+    }
+    .example__cont{
+        margin: 1rem 0rem 1rem 0rem;
+    }
+
+
+    .serviceSection{
+        height: auto;
+    }
+    .serviceSection__title{
+        font-size: 2.5rem;
+        margin: 0rem;
+    }
+    .serviceSection__para{
+        text-align: center;
+        font-size: 1.1rem;
+
+    }
+    .serviceSection__btn{
+        margin: 0rem;
+    }
+
+
+    .footer{
+        font-size: 0.7rem;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-height: 700px) {
+    .serviceSection__title{
+        font-size: 2rem;
+    }
+    .serviceSection__btn{
+        font-size: 0.8rem;
+    }
+    .serviceSection__para{
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 800px) {
+    .hero__container{
+        height: 70rem;
+    }
+    .hero__img{
+        width: auto;
+    }
+    .nav__logo, .contact__btn{
+        display: block;
+    }
+    .gameSection__video{
+        width: 60vw;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1500px) {
+    .gameSection__para{
+        width: 50vw;
+    }
+    .serviceSection__title{
+        font-size: 2rem;
+    }
+    .serviceSection__para{
+        font-size: 1.2rem;
+    }
+    .serviceSection__btn{
+        font-size: 1.5rem;
     }
 }
