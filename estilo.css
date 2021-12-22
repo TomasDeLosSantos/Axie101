@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
 /*
 colors{
@@ -58,9 +58,10 @@ colors{
     font-weight: 700;
     padding: 0.5rem 1rem 0.5rem;
     margin: 1rem;
+    box-shadow: 0rem 0rem 0.5rem #fff;
 }
 .contact__btn:hover{
-    box-shadow: 0rem 0rem 0.5rem #fff;
+    box-shadow: 0rem 0rem 0.8rem #fff;
     color: #fff;
     transition: 0.1s all;
 }
@@ -78,25 +79,43 @@ colors{
 
 .footer{
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    margin: 0.5rem;
+    background-color: #000;
 }
 
 .footer__axie, .footer__web{
     display: flex;
+    width: 800px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0rem 1rem 0rem;
+}
+.footer__axie{
+    border-bottom: solid 1px #C4C4C4;
+    padding: 1rem 0rem 1rem 0rem;
 }
 
-.footer__axieList{
+.footer__axieList, .footer__webList{
+    display: flex;
     margin: 1rem;
     list-style: none;
 }
 
-.footer__webList{
-    margin: 1rem;
-    list-style: none;
+.footer__axieList>li, .footer__webList>li{
+    margin: 0rem 1rem 0rem 1rem;
 }
 
+.social__icon{
+    color: #fff;
+}
+.social__icon:visited{
+    color: #fff;
+}
+.footer__title{
+    color: #C4C4C4;
+}
 /*------FOOTER------*/
 
 /*------HERO------*/
@@ -117,14 +136,14 @@ colors{
 .hero__para{
     text-align: center;
 }
-
+/*
 .btn{
     background-color: #E87A00;
     color: #045174;
     font-size: 1.5rem;
     padding: 0.5rem;
     margin: 1rem auto 1rem auto;
-}
+}*/ 
 
 /*------HERO------*/
 
@@ -134,37 +153,104 @@ colors{
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 60vh;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
 }
-
-.gameSection > article, .gameSection__video{
-    text-align: center;
-    margin: 3rem 1.5rem 3rem 1.5rem;
+.gameSection__title{
+    font-size: 3.25rem;
+    margin-bottom: 1rem;
+    color: #081B3E;
+}
+.gameSection > div>article{
+    text-align: justify;
+    font-size: 1.3125rem;
+    margin: 5rem 1.5rem 0rem 1.5rem;
 }
 .gameSection__video{
-    width: 50vw;
+    text-align: justify;
+    font-size: 1.3125rem;
+    margin: 10rem 1.5rem 3rem 1.5rem;
+    box-shadow: 0rem 0rem 1rem #081B3E;
 }
 .gameSection__para, .gameSection__video{
     width: 33vw;
+}
+.gameSection__img{
+    width: 700px;
 }
 
 /*------GAME SECTION------*/
 
 /*------AXIE SECTION------*/
-
-.axieSection__title, .axieSection__para, .example__para{
-    text-align: center;
-    margin: 1rem;
+.axieSection{
+    height: 80vh;
+    background-color: #042860;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+.axieSection__title, .axieSection__para{
+    text-align: center;
+    margin: 1rem;
+    color: #fff;
+}
+.example__para{
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+}
+.axieSection__title{
+    font-size: 3.25rem;
+}
+.axieSection__para{
+    font-size: 1.1rem;
+}
 .axieSection__examples{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
+.example__cont{
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 1rem;
+    font-size: 1.125rem;
+    box-shadow: 0rem 0rem 0.8rem #042860;
+}
+.example__cont>p{
+    background-color: #006CFF;
+    padding: 0.5rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.example__cont:hover{
+    box-shadow: 0rem 0rem 1rem #C4C4C4;
+}
 
 .example__img{
     width: 300px;
+}
+.btn__cont{
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 50px;
+    color: #042860;
+    background: #00E0B5;
+    margin-top: 1rem;
+    margin-left: 0.8rem;
+    box-shadow: 0rem 0rem 0.5rem #fff;   
+    transition: 0.1s all;
+    width: fit-content;
+    font-size: 1.375rem;
+}
+.btn__cont:hover{
+    box-shadow: 0rem 0rem 0.8rem #fff;  
+    transition: 0.1s all;
+}
+.btn__cont:hover>a{
+    color: #fff;
 }
 
 /*------AXIE SECTION------*/
@@ -172,18 +258,52 @@ colors{
 /*------SERVICE SECTION------*/
 
 .serviceSection{
+    height: 50vh;
+    background-color: #006CFF;
     display: flex;
     text-align: center;
     align-items: center;
-    margin: 2rem;
 }
 
 .serviceSection__pvp, .serviceSection__econ, .serviceSection__becas{
+    background-color: #fff;
+    box-shadow: 0rem 0rem 0.5rem #8EBEFF;
+    border-radius: 10px;
+    padding: 1rem;
+    height: 33vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 33vw;
     margin: 1rem;
+}
+.serviceSection__title{
+    color: #081B3E;
+    font-size: 3rem;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+.serviceSection__para{
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+.serviceSection__btn{
+    padding: 0.1rem 1rem 0.1rem 1rem;
+    border-radius: 50px;
+    color: #042860;
+    background: #00E0B5;
+    margin-top: 1rem;
+    margin-left: 0.8rem;
+    box-shadow: 0rem 0rem 0.5rem #042860;   
+    transition: 0.1s all;
+    width: fit-content;
+    font-size: 1.375rem;
+
+}
+.serviceSection__btn:hover{
+    box-shadow: 0rem 0rem 1rem #042860;
+    color: #fff;
 }
 
 /*------SERVICE SECTION------*/
@@ -550,7 +670,7 @@ colors{
 }
 .hero__container{
     margin: 0rem;
-    height: 90vh;
+    height: 95vh;
     background-color: #04266c;
     display: flex;
     align-items: center;
@@ -559,14 +679,14 @@ colors{
 .hero__title{
     font-family: Poppins;
     font-weight: 700;
-    font-size: 82px;
+    font-size: 5.125rem;
     line-height: 1;
     text-align: start;
 }
 .hero__para{
     margin-top: 1rem;
     text-align: start;
-    font-size: 21px;
+    font-size: 1.3125rem;
     font-weight: 400;
 }
 .hero__data-img{
@@ -580,15 +700,16 @@ colors{
 }
 .hero__btn{
     align-self: left;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    border-radius: 5px;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 50px;
     color: #042860;
     background: #00E0B5;
     margin-top: 1rem;
     margin-left: 0.8rem;
     box-shadow: 0rem 0rem 0.5rem #fff;   
     transition: 0.1s all;
+    width: fit-content;
+    font-size: 22px;
 }
 .hero__btn:hover{
     box-shadow: 0rem 0rem 0.8rem #fff;

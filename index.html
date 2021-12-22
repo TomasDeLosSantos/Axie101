@@ -37,11 +37,18 @@
         </section>
         
         <section class="gameSection">
-            <article>
-                <h2 class="gameSection__title">¿Qué es Axie Infinity?</h2>
-                <p class="gameSection__para"> Axie Infinity es un innovador juego, que combina el clásico juego de estrategia por turnos con el género de los juegos de cartas. En este encontraremos combates cortos donde nos enfrentaremos a la IA o a otros jugadores, donde dependiendo de nuestro nivel, nos recompensaran por cada victoria. </p>
-            </article>
+            <div>
+                <article>
+                    <h2 class="gameSection__title">¿Qué es Axie Infinity?</h2>
+                    <p class="gameSection__para"> Axie Infinity es un innovador juego, que combina el clásico juego de estrategia por turnos con el género de los juegos de cartas. En este encontraremos combates cortos donde nos enfrentaremos a la IA o a otros jugadores, donde dependiendo de nuestro nivel, nos recompensaran por cada victoria. </p>
+                </article>
+                <img class="gameSection__img" src="./assets/axie_gameloop.jpg" alt="img">
+
+            </div>
+            
             <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/WuIH84TGikc?mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="gameSection__video"></iframe>
+
+            
         </section>
         
         <section class="axieSection">
@@ -69,27 +76,27 @@
             </article>
     
             
-            <p><a class="btn axieSection__btn" href="https://marketplace.axieinfinity.com/axie/" target="blank">Consigue los tuyos!</a></p>
+            <p class="btn__cont"><a class="btn axieSection__btn" href="https://marketplace.axieinfinity.com/axie/" target="blank">Consigue los tuyos!</a></p>
             
         </section>
     
         <section class="serviceSection">
             <div class="serviceSection__pvp">
-                <h2 class="serviceSection__pvp--title">¿Querés convertirte en el mejor entrenador?</h2>
-                <p class="serviceSection__pvp--text">Tenemos una guía con todo lo que tenes que saber sobre los combates en Axie Infinity</p>
-                <a class="btn serviceSection__pvp--link" href="./secciones/pvp.html">PVP</a>
+                <h2 class="serviceSection__title">COMBATES</h2>
+                <p class="serviceSection__para">Tenemos una guía con todo lo que tenes que saber antes de enfrentarte a los mejores entrenadores de Lunacia</p>
+                <a class="btn serviceSection__btn" href="./secciones/pvp.html">Saber más</a>
             </div>
     
             <div class="serviceSection__econ">
-                <h2 class="serviceSection__econ--title">¿Cómo funciona la economía?</h2>
-                <p class="serviceSection__econ--text">¿Qué es la blockchain? ¿De verdad de gana dinero? Todas tus dudas respecto la econmía de Axie Infinity tienen respuestas aquí</p>
-                <a class="btn serviceSection__econ--link" href="./secciones/economia.html">Economía</a>
+                <h2 class="serviceSection__title">ECONOMÍA</h2>
+                <p class="serviceSection__para">¿Qué es la blockchain? ¿De verdad de gana dinero? Todas tus dudas respecto la econmía de Axie Infinity tienen respuestas aquí</p>
+                <a class="btn serviceSection__btn" href="./secciones/economia.html">Saber más</a>
             </div>
     
             <div class="serviceSection__becas">
-                <h2 class="serviceSection__becas--title">¿Cómo funcionan las becas?</h2>
-                <p class="serviceSection__becas--text">Las becas son la forma de entrar al juego sin costo! Enterate como funcionan y cómo formar parte de nuestro equipo de becados</p>
-                <a class="btn serviceSection__becas--link" href="./secciones/becas.html">Becas</a>
+                <h2 class="serviceSection__title">BECAS</h2>
+                <p class="serviceSection__para">Las becas son la forma de entrar al juego sin costo! Enterate como funcionan y cómo formar parte de nuestro equipo de becados</p>
+                <a class="btn serviceSection__btn" href="./secciones/becas.html">Saber más</a>
             </div>
         </section>
     </main>
@@ -98,24 +105,30 @@
     <footer>
         <div class="footer">
             <div class="footer__axie">
-                <img class="footer__axieLogo" src="./assets/axieLogo.png" alt="Redes Axie">
+                <div>
+                    <img class="logo footer__axieLogo" src="./assets/SVG/logo_white.svg" alt="Redes Axie">
+                    <p class="footer__title">Axie Infinity Oficial</p>
+                </div>
                 <ul class="footer__axieList">
-                    <li class="footer__axieList--web"><a href="">Web oficial</a></li>
-                    <li class="footer__axieList--ig"><a href="">Instagram</a></li>
-                    <li class="footer__axieList--tw"><a href="">Twitter</a></li>
-                    <li class="footer__axieList--dc"><a href="">Discord</a></li>
+                    <li class="footer__axieList--web"><a class="social__icon" href="">Web oficial</a></li>
+                    <li class="footer__axieList--ig"><a class="social__icon" href="">Instagram</a></li>
+                    <li class="footer__axieList--tw"><a class="social__icon" href="">Twitter</a></li>
+                    <li class="footer__axieList--dc"><a class="social__icon" href="">Discord</a></li>
                 </ul>
             </div>
             
             <div class="footer__web">
+                <div>
+                    <img class="logo footer__webLogo" src="./assets/SVG/logo_white.svg" alt="Redes Dev">
+                    <p class="footer__title">Redes Dev</p>
+                </div>
                 <ul class="footer__webList">
-                    <li class="footer__webList--ld"><a href="">Linkedin</a></li>
-                    <li class="footer__webList--ig"><a href="">Instagram</a></li>
-                    <li class="footer__webList--tw"><a href="">Twitter</a></li>
-                    <li class="footer__webList--dc"><a href="">Discord</a></li>
-                </ul>
+                    <li class="footer__webList--ld"><a class="social__icon" href="">Linkedin</a></li>
+                    <li class="footer__webList--ig"><a class="social__icon" href="">Instagram</a></li>
+                    <li class="footer__webList--tw"><a class="social__icon" href="">Twitter</a></li>
+                    <li class="footer__webList--dc"><a  class="social__icon" href="">Discord</a></li>
+                x</ul>
                 
-                <img class="logo footer__webLogo" src="./assets/logo.png" alt="Redes Dev">
             </div>
         </div>
     </footer>
