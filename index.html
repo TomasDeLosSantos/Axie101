@@ -8,15 +8,10 @@
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <!-- Etiquetas de arquitectura del sitio 
-    <div class="grilla">
-    
-    </div>
--->
-
-    <header>
-        <nav class="nav__container">
-            <img src="./assets/logo.png" alt="LOGO" class="logo">
+    <!-- Etiquetas de arquitectura del sitio -->
+    <nav>
+        <div class="nav__container">
+            <img src="./assets/SVG/logo_white.svg" alt="LOGO" class="logo nav__logo">
             <ul class="nav__ul">
                 <li class="nav__li"><a href="#">Inicio</a></li>
                 <li class="nav__li"><a href="./secciones/general.html">General</a></li>
@@ -25,14 +20,20 @@
                 <li class="nav__li"><a href="./secciones/economia.html">Economía</a></li>
             </ul>
             <a href="./secciones/contacto.html" class="contact__btn"> CONSIGUE UNA BECA</a>
-        </nav>
-    </header>
+        </div>
+    </nav>
+
 
     <main>
         <section class="hero__container">
-            <h1 class="hero__title">LA REVOLUCIÓN DE LOS NFT YA ESTÁ AQUÍ</h1>
-            <p class="hero__para">Axie infinity es el primer juego en implementar un sistema Play & Earn, en donde los jugadores son recompensados economicamente por invertir su tiempo y dedicación para convertirse en el mejor entrenador de Lunacia. Si quieres entrar en el mundo de los juegos NFT pero aún tienes dudas, este es tu lugar. Tenemos secciones dedicadas a cada aspecto general del juego, cubriendo de lo más básico hasta recomendaciones para jugadores con experiencia. Queremos que tengas todas las herramientas necesarias para poder empezar a competir por un lugar en el top. </p>
-            <a class="btn hero__btn" href="./secciones/general.html">COMENCEMOS!</a>
+            <div class="hero__data">
+                <h1 class="hero__title">Todo sobre <br>Axie Infinity</h1>
+                <p class="hero__para">Aquí encontrarás todo lo que necesitas saber para comenzar tu aventura en Lunacia. </p>
+                <a class="btn hero__btn" href="./secciones/general.html">COMENCEMOS</a>
+            </div>
+            <div class="hero__data_img">
+                <img src="./assets/axie_miner_image_tp.png" alt="axie display" class="hero__img">
+            </div>
         </section>
         
         <section class="gameSection">
@@ -40,13 +41,9 @@
                 <h2 class="gameSection__title">¿Qué es Axie Infinity?</h2>
                 <p class="gameSection__para"> Axie Infinity es un innovador juego, que combina el clásico juego de estrategia por turnos con el género de los juegos de cartas. En este encontraremos combates cortos donde nos enfrentaremos a la IA o a otros jugadores, donde dependiendo de nuestro nivel, nos recompensaran por cada victoria. </p>
             </article>
-            
-            <video src="#" controls class="gameSection__video">
-                <code>Gameplay Axie infinity</code>
-            </video>
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/WuIH84TGikc?mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="gameSection__video"></iframe>
         </section>
         
-    
         <section class="axieSection">
             <article>
                 <h2 class="axieSection__title">¿Qué son los Axies?</h2>
@@ -76,7 +73,6 @@
             
         </section>
     
-    
         <section class="serviceSection">
             <div class="serviceSection__pvp">
                 <h2 class="serviceSection__pvp--title">¿Querés convertirte en el mejor entrenador?</h2>
@@ -96,32 +92,33 @@
                 <a class="btn serviceSection__becas--link" href="./secciones/becas.html">Becas</a>
             </div>
         </section>
-
     </main>
-
-    <footer class="footer">
-        <div class="footer__axie">
-            <img class="footer__axieLogo" src="./assets/axieLogo.png" alt="Redes Axie">
-            <ul class="footer__axieList">
-                <li class="footer__axieList--web"><a href="">Web oficial</a></li>
-                <li class="footer__axieList--ig"><a href="">Instagram</a></li>
-                <li class="footer__axieList--tw"><a href="">Twitter</a></li>
-                <li class="footer__axieList--dc"><a href="">Discord</a></li>
-            </ul>
-        </div>
-        
-        <div class="footer__web">
-            <ul class="footer__webList">
-                <li class="footer__webList--ld"><a href="">Linkedin</a></li>
-                <li class="footer__webList--ig"><a href="">Instagram</a></li>
-                <li class="footer__webList--tw"><a href="">Twitter</a></li>
-                <li class="footer__webList--dc"><a href="">Discord</a></li>
-            </ul>
+    
+    
+    <footer>
+        <div class="footer">
+            <div class="footer__axie">
+                <img class="footer__axieLogo" src="./assets/axieLogo.png" alt="Redes Axie">
+                <ul class="footer__axieList">
+                    <li class="footer__axieList--web"><a href="">Web oficial</a></li>
+                    <li class="footer__axieList--ig"><a href="">Instagram</a></li>
+                    <li class="footer__axieList--tw"><a href="">Twitter</a></li>
+                    <li class="footer__axieList--dc"><a href="">Discord</a></li>
+                </ul>
+            </div>
             
-            <img class="logo footer__webLogo" src="./assets/logo.png" alt="Redes Dev">
+            <div class="footer__web">
+                <ul class="footer__webList">
+                    <li class="footer__webList--ld"><a href="">Linkedin</a></li>
+                    <li class="footer__webList--ig"><a href="">Instagram</a></li>
+                    <li class="footer__webList--tw"><a href="">Twitter</a></li>
+                    <li class="footer__webList--dc"><a href="">Discord</a></li>
+                </ul>
+                
+                <img class="logo footer__webLogo" src="./assets/logo.png" alt="Redes Dev">
+            </div>
         </div>
     </footer>
     <!-- Etiquetas de arquitectura del sitio -->
-
 </body>
 </html>
