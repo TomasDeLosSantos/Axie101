@@ -22,7 +22,6 @@ colors{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /*background-color: #D89C60;*/
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
 }
@@ -37,16 +36,24 @@ ul{
 header{
     position: sticky;
     top: 0;
+    z-index: 100;
 }
-
+/*
 .nav__container{
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #006CFF;
-    
     line-height: 1;
+}*/
+.navbar{
+    background-color: #006CFF;
 }
+.bars__icon{
+    color: #fff;
+    font-size: 2rem;
+}
+/*
 .nav__ul{
     display: flex;
     justify-content: center;
@@ -59,12 +66,26 @@ header{
 .nav__li a{
     color: #8EBEFF;
     font-size: 1rem;
-    /*padding: 0.5rem;*/
     margin: 1rem;
     text-decoration: none;
 }
 
 .nav__li a:hover{
+    color: #fff;
+}*/
+
+.nav__li{
+    color: #8EBEFF;
+    font-size: 1rem;
+    margin: 1rem;
+    text-decoration: none;
+    text-align: center;
+}
+.nav__li:visited{
+    color: #8EBEFF;
+}
+
+.nav__li:hover{
     color: #fff;
 }
 
@@ -77,7 +98,7 @@ header{
     border-radius: 50px;
     font-size: 1rem;
     font-weight: 700;
-    
+    border: none;
     text-decoration: none;
     padding: 0.5rem 1rem 0.5rem;
     margin: 1rem;
@@ -92,9 +113,8 @@ header{
 
 .logo{
     width: 6rem;
-    /*height: 6rem;*/
-    /*margin: 1rem;*/
 }
+
 
 
 /*------NAV------*/
@@ -144,6 +164,9 @@ header{
 .social__icon:visited{
     color: #fff;
 }
+.a:visited{
+    color: #fff;
+}
 .footer__title{
     color: #C4C4C4;
 }
@@ -152,11 +175,6 @@ header{
 /*------HERO------*/
 
 .hero__container{
-    /*   
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    */
     margin: 1rem;
 }
 .hero__title, .hero__para, .hero__btn{
@@ -167,14 +185,6 @@ header{
 .hero__para{
     text-align: center;
 }
-/*
-.btn{
-    background-color: #E87A00;
-    color: #045174;
-    font-size: 1.5rem;
-    padding: 0.5rem;
-    margin: 1rem auto 1rem auto;
-}*/ 
 
 /*------HERO------*/
 
@@ -827,8 +837,17 @@ input:-webkit-autofill:active{
         font-size: 0.9rem;
         margin: 0rem 0rem 0rem 0.2rem;
     }
-    .nav__logo, .contact__btn{
+    
+    .nav__container{
         display: none;
+    }
+    .contact__btn{
+        align-self: center;
+        display: block;
+        align-items: center;
+        background-color: transparent;
+        margin-left: auto;
+        margin-right: auto;
     }
     .gameSection, .axieSection__examples, .serviceSection, .footer__axie, .footer__web, .statistics__items, .energy, .exp, .bans, .rewards, .types__flex, .morale, .trend__flex, .breed, .coins__flex, .roi__flex, .tree__flex, .stake__flex, .comp__cont{
         flex-direction: column;
@@ -1145,5 +1164,15 @@ input:-webkit-autofill:active{
     }
     .serviceSection__pvp, .serviceSection__econ, .serviceSection__becas{
         height: 75vw;
+    }
+}
+@media screen and (min-width: 992px) {
+    .navbar-brand{
+        display: none;
+    }
+}
+@media screen and (max-width: 992px) {
+    .logo__collapsed{
+        display: none;
     }
 }

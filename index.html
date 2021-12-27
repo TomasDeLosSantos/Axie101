@@ -12,19 +12,22 @@
 <body>
     <!-- Etiquetas de arquitectura del sitio -->
     <header>
-        <nav>
-            <div class="nav__container">
-                <img src="./assets/SVG/logo_white.svg" alt="LOGO" class="logo nav__logo">
-                <ul class="nav__ul">
-                    <li class="nav__li"><a href="#">Inicio</a></li>
-                    <li class="nav__li"><a href="./secciones/general.html">General</a></li>
-                    <li class="nav__li"><a href="./secciones/pvp.html">PvP</a></li>
-                    <li class="nav__li"><a href="./secciones/becas.html">Becas</a></li>
-                    <li class="nav__li"><a href="./secciones/economia.html">Economía</a></li>
-                </ul>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="./assets/SVG/logo_white.svg" alt="LOGO" class="logo nav__logo"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars bars__icon"></i>
+              </button>
+              <div class="collapse justify-content-center navbar-collapse" id="navbarSupportedContent">
+                <a href="#"><img src="./assets/SVG/logo_white.svg" alt="LOGO" class="logo nav__logo logo__collapsed"></a>
+                <a class="nav__li nav-link" href="./secciones/general.html">General</a>
+                <a class="nav__li nav-link" href="./secciones/pvp.html">PvP</a>
+                <a class="nav__li nav-link" href="./secciones/becas.html">Becas</a>
+                <a class="nav__li nav-link" href="./secciones/economia.html">Economía</a>
                 <button class="btn btn-primary contact__btn" type="button" data-bs-toggle="modal" data-bs-target="#scholarForm"> CONSIGUE UNA BECA</button>
+              </div>
             </div>
-        </nav>
+          </nav>
     </header>
 
     <!-- Modal -->

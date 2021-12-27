@@ -5,24 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Becas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/IconLibrary/css/all.min.css">
     <link rel="stylesheet" href="../estilo.css">
 </head>
 <body>
     <header>
-        <nav>
-            <div class="nav__container">
-                <img src="../assets/SVG/logo_white.svg" alt="LOGO" class="logo nav__logo">
-                <ul class="nav__ul">
-                    <li class="nav__li"><a href="../index.html">Inicio</a></li>
-                    <li class="nav__li"><a href="./general.html">General</a></li>
-                    <li class="nav__li"><a href="./pvp.html">PvP</a></li>
-                    <li class="nav__li"><a href="#">Becas</a></li>
-                    <li class="nav__li"><a href="./economia.html">Economía</a></li>
-                </ul>
-                <a href="./contacto.html" class="contact__btn"> CONSIGUE UNA BECA</a>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html"><img src="../assets/SVG/logo_white.svg" alt="LOGO" class="logo nav__logo"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars bars__icon"></i>
+              </button>
+              <div class="collapse justify-content-center navbar-collapse" id="navbarSupportedContent">
+                <a href="../index.html"><img src="../assets/SVG/logo_white.svg" alt="LOGO" class="logo nav__logo logo__collapsed"></a>
+                <a class="nav__li nav-link" href="./general.html">General</a>
+                <a class="nav__li nav-link" href="./pvp.html">PvP</a>
+                <a class="nav__li nav-link" href="#">Becas</a>
+                <a class="nav__li nav-link" href="./economia.html">Economía</a>
+                <button class="btn btn-primary contact__btn" type="button" data-bs-toggle="modal" data-bs-target="#scholarForm"> CONSIGUE UNA BECA</button>
+              </div>
             </div>
-        </nav>
+          </nav>
     </header>
+
+     <!-- Modal -->
+     <div class="modal fade" id="scholarForm" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Sé parte de nuestro equipo</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <fieldset>
+                        <input class="form__name" type="text" name="nombre" id="" placeholder="Nombre">
+    
+                        <input class="form__age" type="number" name="edad" id="" placeholder="Edad">
+    
+                        <input class="form__genre" type="text" name="genero" id="" placeholder="Género">
+    
+                        <div class="form__exp">
+                            <label for="becado">Tuvo una beca anteriormente:</label>
+                            <div class="form__exp-yes">
+                                <b>Si</b><input type="radio" name="becado" value="si">
+                            </div>
+                            <div class="form__exp-no">
+                                <b>No</b><input type="radio" name="becado" value="no">
+                            </div>
+                        </div>
+    
+                        <input class="form__email" type="email" name="mail" id="" placeholder="Ingrese su email">
+    
+                        <input class="form__dc" type="text" name="discord" id="" placeholder="Ingrese su discord">
+    
+                        <textarea class="form__text" name="experiencia" id="" cols="30" rows="5" placeholder="Experiencia en Axie u otros juegos de estrategia o cartas"></textarea>
+    
+                        <div class="form__btns">
+                            <input class="form__reset" type="reset" value="Borrar">
+                            <input class="form__submit" type="submit" value="Enviar">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+          </div>
+        </div>
+      </div>
+        <!-- Modal -->
     
     <main>
         <section class="scholar">
@@ -137,5 +187,6 @@
             <img class="logo footer__webLogo" src="../assets/logo.png" alt="Redes Dev">
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
