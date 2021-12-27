@@ -28,12 +28,16 @@ colors{
 }
 
 /*------NAV------*/
+header{
+    position: sticky;
+    top: 0;
+}
 
 .nav__container{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1.5rem;
+    background-color: #006CFF;
 }
 .nav__ul, .nav__li{
     display: inline-block;
@@ -109,6 +113,13 @@ colors{
 
 .footer__axieList>li, .footer__webList>li{
     margin: 0rem 1rem 0rem 1rem;
+}
+.footer__axie>div, .footer__web>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
 }
 
 .social__icon{
@@ -659,22 +670,13 @@ colors{
     margin: 1rem 0rem 1rem 0rem;
 }
 
-.nav__container{
-    background-color: #006CFF;
-    margin: 0rem;
-    position: fixed;
-    top: 0rem;
-    width: 100vw;
-    height: 10vh;
-
-}
 .nav__logo{
     width: 70px;
     margin-right: 2rem;
 }
 .hero__container{
     margin: 0rem;
-    height: 95vh;
+    height: 90vh;
     background-color: #04266c;
     display: flex;
     align-items: center;
@@ -717,6 +719,11 @@ colors{
 }
 .hero__btn:hover{
     box-shadow: 0rem 0rem 0.8rem #fff;
+    color: #fff;
+}
+
+.icon{
+    font-size: 1.5rem;
     color: #fff;
 }
 
