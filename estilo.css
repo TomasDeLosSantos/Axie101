@@ -26,6 +26,12 @@ colors{
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
 }
+p{
+    margin: 0;
+}
+ul{
+    padding:0;
+}
 
 /*------NAV------*/
 header{
@@ -38,9 +44,16 @@ header{
     justify-content: center;
     align-items: center;
     background-color: #006CFF;
+    
+    line-height: 1;
 }
-.nav__ul, .nav__li{
-    display: inline-block;
+.nav__ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .nav__li a{
@@ -48,6 +61,7 @@ header{
     font-size: 1rem;
     /*padding: 0.5rem;*/
     margin: 1rem;
+    text-decoration: none;
 }
 
 .nav__li a:hover{
@@ -63,6 +77,8 @@ header{
     border-radius: 50px;
     font-size: 1rem;
     font-weight: 700;
+    
+    text-decoration: none;
     padding: 0.5rem 1rem 0.5rem;
     margin: 1rem;
     /*box-shadow: 0rem 0rem 0.5rem #fff;*/
@@ -174,6 +190,7 @@ header{
 }
 .gameSection__title{
     font-size: 3.25rem;
+    font-weight: 700;
     margin-bottom: 1rem;
     color: #081B3E;
 }
@@ -219,18 +236,15 @@ header{
 }
 .axieSection__title{
     font-size: 3.25rem;
+    font-weight: 700;
 }
 .axieSection__para{
     font-size: 1.1rem;
 }
-.axieSection__examples{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 .example__cont{
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 11px;
     margin: 1rem;
     font-size: 1.125rem;
     box-shadow: 0rem 0rem 0.8rem #042860;
@@ -249,7 +263,6 @@ header{
     width: 300px;
 }
 .btn__cont{
-    padding: 0.5rem 1rem 0.5rem 1rem;
     border-radius: 50px;
     color: #042860;
     background: #00E0B5;
@@ -258,6 +271,9 @@ header{
     box-shadow: 0rem 0rem 0.5rem #fff;   
     transition: 0.1s all;
     width: fit-content;
+}
+.btn__cont>a{
+    padding: 0.5rem 1rem 0.5rem 1rem;
     font-size: 1.375rem;
 }
 .btn__cont:hover{
@@ -267,18 +283,15 @@ header{
 .btn__cont:hover>a{
     color: #fff;
 }
+main{
+    overflow: hidden;
+}
 
 /*------AXIE SECTION------*/
 
 /*------SERVICE SECTION------*/
 
-.serviceSection{
-    height: 50vh;
-    background-color: #006CFF;
-    display: flex;
-    text-align: center;
-    align-items: center;
-}
+
 
 .serviceSection__pvp, .serviceSection__econ, .serviceSection__becas{
     background-color: #fff;
@@ -296,6 +309,7 @@ header{
 .serviceSection__title{
     color: #081B3E;
     font-size: 3rem;
+    font-weight: 700;
     line-height: 1.1;
     margin-bottom: 1rem;
 }
@@ -705,7 +719,6 @@ header{
     flex-direction: column;
 }
 .hero__btn{
-    align-self: left;
     padding: 0.5rem 1rem 0.5rem 1rem;
     border-radius: 50px;
     color: #042860;
@@ -726,6 +739,87 @@ header{
     font-size: 1.5rem;
     color: #fff;
 }
+
+/* FORMULARIO */
+input, textarea{
+    padding: 0.5rem;
+}
+input:focus{
+    border-bottom: none;
+    outline: solid 1px #081B3E;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px #fff inset !important;
+}
+
+.modal-title, .form__exp-yes>b, .form__exp-no>b{
+    color: #081B3E;
+    font-weight: 700;
+    margin-right: 0.2rem;
+}
+
+.form__name, .form__age, .form__genre, .form__email, .form__dc{
+    margin-bottom: 1rem;
+    width: 100%;
+    border: none;
+    border-bottom: solid 1px #081B3E;
+
+}
+.form__exp-yes, .form__exp-no{
+    display: inline-block;
+    margin: 0.5rem;
+}
+.form__text{
+    width: 100%;
+    resize: none;
+    border: none;
+    border-bottom: 1px solid #081B3E;
+    margin-bottom: 1rem;
+}
+.form__text:focus{
+    border-bottom: none;
+    outline: solid 1px #081B3E;
+}
+
+.form__btns{
+    display: flex;
+    justify-content: flex-end;
+}
+.form__reset, .form__submit{
+    padding: 0.1rem 1rem 0.1rem 1rem;
+    border: none;
+    border-radius: 50px;
+    margin-top: 1rem;
+    margin-left: 0.8rem;
+    box-shadow: 0rem 0rem 0.5rem #042860;   
+    transition: 0.1s all;
+    width: fit-content;
+    font-size: 1.375rem;
+}
+.form__reset{
+    color: #081B3E;
+    background: none;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+}
+.form__reset:hover{
+    border-bottom: 1px solid #081B3E;
+}
+.form__submit{
+    color: #fff;
+    background: #081B3E;
+}
+.form__submit:hover{
+    box-shadow: 0rem 0rem 1rem #042860;
+    background: #00E0B5;
+}
+
 
 
 @media screen and (max-width:800px){
@@ -942,17 +1036,7 @@ header{
     }
 }
 
-@media screen and (max-height: 700px) {
-    .serviceSection__title{
-        font-size: 2rem;
-    }
-    .serviceSection__btn{
-        font-size: 0.8rem;
-    }
-    .serviceSection__para{
-        font-size: 0.8rem;
-    }
-}
+
 
 @media screen and (min-width: 700px) and (max-width: 800px) {
     .hero__container{
@@ -981,5 +1065,85 @@ header{
     }
     .serviceSection__btn{
         font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .axieSection__examples{
+        display: none;
+    }
+    .axieSection__carousel{
+        width: 350px;
+    }
+    .example__cont{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .example__para{
+        width: 100%;
+    }
+    .serviceSection{
+        display: none;
+    }
+    .serviceSection__carousel{
+        background-color: #006CFF;
+        width: 100%;
+    }
+    .serviceSection__pvp, .serviceSection__econ, .serviceSection__becas{
+        width: 75vw;
+        margin: 3rem auto 3rem auto;
+    }
+    .serviceSection__econ>.serviceSection__para, .serviceSection__becas>.serviceSection__para{
+        font-size: 1rem;
+    }
+    .serviceSection__btn{
+        font-size: 1rem;
+    }
+    .serviceSection__title{
+        font-size: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .axieSection__carousel{
+        width: 300px;
+    }
+}
+
+@media screen and (min-width: 801px) {
+    .axieSection__carousel{
+        display: none;
+    }
+    .axieSection__examples{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .serviceSection__carousel{
+        display: none;
+    }
+    .serviceSection{
+        height: 50vh;
+        background-color: #006CFF;
+        display: flex;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-height: 650px) {
+    .serviceSection__title{
+        font-size: 2rem;
+    }
+    .serviceSection__btn{
+        font-size: 0.8rem;
+    }
+    .serviceSection__para{
+        font-size: 0.8rem;
+    }
+    .serviceSection__pvp, .serviceSection__econ, .serviceSection__becas{
+        height: 75vw;
     }
 }
