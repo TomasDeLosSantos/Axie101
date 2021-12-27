@@ -380,7 +380,7 @@ main{
 
 .lvl__img{
     padding: 2rem;
-    width: 900px;
+    width: 60%;
 }
 
 .bans__content{
@@ -389,63 +389,23 @@ main{
 }
 /* GENERAL.HTML */
 
-
-.scholar{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    margin: 1rem;
+/*  BECAS.HTML  */
+.scholar__content>*{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
-
-.scholar>*{
-    padding: 0.5rem;
-}
-
 .scholar__video{
     width: 30vw;
-}
-
-.how, .needs, .where, .guilds, .myScholar, .ourScholar{
-    margin: 1rem;
-}
-
-.guilds__container{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    text-align: center;
-    margin: 2rem;
 }
 .guilds__img{
     width: 200px;
 }
-
-.myScholar{
+.myScholar__title,.myScholar__para, .ourScholar__title, .guild__name{
     text-align: center;
 }
-.myScholar__cont{
-    width: 40vw;
-    margin: 1rem;
-}
-.myScholar__flex{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.myScholar__img{
-    margin: 1rem;
-}
 
-.ourScholar{
-    text-align: center;
-}
-.ul__cont{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin: 2rem 0rem 2rem 0rem;
-}
+
+
 .breed{
     display: flex;
     align-items: center;
@@ -788,26 +748,11 @@ input:-webkit-autofill:active{
     .footer__axieLogo, .footer__webLogo{
         width: 80px;
     }
-    .grid{
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-        grid-template-areas: 
-            "title1"
-            "text1"
-            "img1"
-            "img2"
-            "img3"
-            "title2"
-            "text2";
-    }
     .exp__title{
         order: -1;
     }
     .lvl__title{
         display: none;
-    }
-    .lvl__img{
-        width: 100vw;
     }
 
     .scholar__para{
