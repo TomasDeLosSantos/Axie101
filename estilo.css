@@ -31,6 +31,9 @@ p{
 ul{
     padding:0;
 }
+h1,h2,h3,h4,h5,h6{
+    font-weight: 700;
+}
 
 /*------NAV------*/
 header{
@@ -347,110 +350,32 @@ main{
 
 /*------SERVICE SECTION------*/
 
+
+
 /* GENERAL.HTML */
 /*------A------*/
-
-.statistics__header{
+.statistics__content{
     text-align: center;
+    margin-top: 2rem;
+}
+.statistics__content>.row{
+    margin: 3rem 0rem 3rem 0rem;
 }
 
-.statistics__items{
-    display: flex;
+.stat__title{
+    text-align: start;
+    font-size: 3.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #081B3E;
+}
+.stat__para{
+    text-align: start;
+}
+
+
+.adv__content{
     text-align: center;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.statistics__items > div{
-    margin: 2rem;
-    width: 25vw;
-}
-
-.grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
-        "title1 text1 text1"
-        "img1 img2 img3"
-        "title2 text2 text2";
-    text-align: center;
-    align-items: center;
-    justify-content: center;  
-}
-.tiebrak__title{
-    grid-area: title1;
-    align-self: left;
-}
-.tiebreak__para{
-    grid-area: text1;
-    margin-right: 5rem;
-}
-
-.example__img1{
-    grid-area: img1;
-    place-self: center;
-}
-.example__img2{
-    grid-area: img2;
-    
-    place-self: center;
-}
-.example__img3{
-    grid-area: img3;
-    
-    place-self: center;
-}
-
-.card__title{
-    grid-area: title2;
-}
-
-.card__para{
-    grid-area: text2;
-    
-    margin-right: 5rem;
-}
-
-.adv__title{
-    text-align: center;
-    margin: 2rem;
-}
-
-.energy{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    text-align: center;
-    margin: 1rem;
-}
-
-.energy__title{
-    align-self: left;
-}
-.energy__para{
-    width: 60vw;
-}
-
-.exp{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    text-align: center;
-    margin: 1rem;
-}
-
-.exp__title{
-    align-self: right;
-}
-.exp__para{
-    width: 60vw;
-}
-
-.lvl__table{
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .lvl__img{
@@ -458,19 +383,12 @@ main{
     width: 900px;
 }
 
-.bans__title{
+.bans__content{
     text-align: center;
+    margin-bottom: 3rem;
 }
-.bans{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin: 1rem 2rem 3rem 2rem;
-}
-.bans>div{
-    margin: 1rem;
-}
+/* GENERAL.HTML */
+
 
 .scholar{
     display: flex;

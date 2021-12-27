@@ -75,107 +75,129 @@
         <!-- Modal -->
     
     <main>
-        <section class="statistics">
-            <div class="statistics__header">
-                <h2>ESTADÍSTICAS</h2>
-                <p>Axie Infinity es un juego de estrategia por turnos. En el juego te enfrentaras a enemigos controlados por IA y contra otros jugadores reales de todas partes del mundo, según el modo de juego que elijas. Para jugar necesitaras al menos 3 mascotas NFT conocidas como "Axies" para hacer uso de sus poderes. </p>
-                <p>Cada Axie tiene 6 partes que lo componen. Estos 6 genes le otorgan distintas estadísticas según el tipo al que pertenecen, y 4 de ellos determinan las cartas que tendrá a su disposición.</p>
-                <p>Existen 4 estadísticas que definen a cada Axie, donde el máximo valor que pueden alcanzar es 61:</p>
-            </div>
+        <section class="statistics container-fluid">
+            <div class="statistics__content container-lg">
+                <h2 class="stat__title">ESTADÍSTICAS</h2>
+                <p class="stat__para">Axie Infinity es un juego de estrategia por turnos. En el juego te enfrentaras a enemigos controlados por IA y contra otros jugadores reales de todas partes del mundo, según el modo de juego que elijas. Para jugar necesitaras al menos 3 mascotas NFT conocidas como "Axies" para hacer uso de sus poderes. Cada Axie tiene 6 partes que lo componen. Estos 6 genes le otorgan distintas estadísticas según el tipo al que pertenecen, y 4 de ellos determinan las cartas que tendrá a su disposición. Existen 4 estadísticas que definen a cada Axie, donde el máximo valor que pueden alcanzar es 61:</p>
 
-            <div class="statistics__items">
-                <div>
-                    <h4>Vida</h4>
-                    <p>Determina los puntos de vida dentro del combate.</p>
-                </div>
-                <div>
-                    <h4>Velocidad</h4>
-                    <p>Determina el órden en que se activarán las habilidades en cada turno. Se jugarán primero las cartas del Axie con mayor velocidad.</p>
-                </div>
-                <div>
-                    <h4>Habilidad</h4>
-                    <p>Agrega daño a las cartas jugadas en cadena.</p>
-                </div>
-                <div>
-                    <h4>Moral</h4>
-                    <p>Aumenta la probabilidad del los golpes críticos, y también el daño de los mismos.</p>
-                </div>    
-            </div>
-            <div class="grid">
-                <h4 class="tiebreak__title">Mecanismo de desempate</h4>
-                <p class="tiebreak__para">Cuando dos o más Axies empatan en velocidad, pegará primero el Axie con menos vida, y si empataran también en vida, se mirán la Habilidad, luego la Moral y por último el ID del Axie, donde pegará primero el que tenga un ID menor.</p>
+                <article class="row statistics__items">
+                    <div class="col">
+                        <h4>Vida</h4>
+                        <p>Determina los puntos de vida dentro del combate.</p>
+                    </div>
+                    <div class="col">
+                        <h4>Velocidad</h4>
+                        <p>Determina el órden en que se activarán las habilidades en cada turno. Se jugarán primero las cartas del Axie con mayor velocidad.</p>
+                    </div>
+                    <div class="col">
+                        <h4>Habilidad</h4>
+                        <p>Agrega daño a las cartas jugadas en cadena.</p>
+                    </div>
+                    <div class="col">
+                        <h4>Moral</h4>
+                        <p>Aumenta la probabilidad del los golpes críticos, y también el daño de los mismos.</p>
+                    </div>
+                </article> 
 
-                
-                <img src="../assets/placeholder.png" alt="1" class="example__img1">
-                <img src="../assets/placeholder.png" alt="2" class="example__img2">
-                <img src="../assets/placeholder.png" alt="3" class="example__img3">
+                <article class="row">
+                    <div class="col-lg my-auto">
+                        <h4 class="tiebreak__title">Mecanismo de desempate</h4>
+                    </div>
+                    <div class="col-lg-8"> 
+                        <p class="tiebreak__para">Cuando dos o más Axies empatan en velocidad, pegará primero el Axie con menos vida, y si empataran también en vida, se mirán la Habilidad, luego la Moral y por último el ID del Axie, donde pegará primero el que tenga un ID menor.</p>
+                    </div>
+                </article>
 
-                
-                <h4 class="card__title">Cartas</h4>
-                <p class="card__para">Estos son los "poderes" que cada una de nuestras mascotas tiene disponible para cada combate. Cada equipo cuenta con 3 Axies, y cada mazo cuenta con 2 copias de cada carta que posea cada uno. En total, cada mazo se compone de 24 cartas. Las cartas se reparten de la siguiente forma: 6 en el primer turno, y luego 3 cada turno que sigue. Cuando una carta se usa (o el Axie que posee las cartas muere) las cartas van a la pila de decarte. Cuando se terminan las cartas en el mazo, las descartadas se mezclan y se convierten en el mazo nuevamente.</p>
+                <article class="row">
+                    <img src="../assets/placeholder.png" alt="1" class="example__img col">
+                    <img src="../assets/placeholder.png" alt="2" class="example__img col">
+                    <img src="../assets/placeholder.png" alt="3" class="example__img col">
+                </article>
 
-                
+                <article class="row">
+                    <div class="col-lg my-auto">
+                        <h4 class="card__title">Cartas</h4>
+                    </div>
+                    <div class="col-lg-8"> 
+                        <p class="card__para">Estos son los "poderes" que cada una de nuestras mascotas tiene disponible para cada combate. Cada equipo cuenta con 3 Axies, y cada mazo cuenta con 2 copias de cada carta que posea cada uno. En total, cada mazo se compone de 24 cartas. Las cartas se reparten de la siguiente forma: 6 en el primer turno, y luego 3 cada turno que sigue. Cuando una carta se usa (o el Axie que posee las cartas muere) las cartas van a la pila de decarte. Cuando se terminan las cartas en el mazo, las descartadas se mezclan y se convierten en el mazo nuevamente.</p>
+                    </div>
+                </article>
             </div>
         </section>
-        <section>    
-            <h2 class="adv__title">MODO AVENTURA</h2>
-            
-            <div class="energy">
-                <h3 class="energy__title">ENERGÍAS</h3>
-                <p class="energy__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima assumenda ut esse dicta neque enim! Labore impedit quaerat tempora cum fugiat ut neque eum, doloremque rerum sunt perspiciatis error repellendus magni mollitia! Esse vitae dolorum, fugit nisi placeat deleniti et illum facilis quae neque labore debitis ex qui soluta magni?</p>
-            </div>
 
-            <div class="exp">
-                <p class="exp__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima assumenda ut esse dicta neque enim! Labore impedit quaerat tempora cum fugiat ut neque eum, doloremque rerum sunt perspiciatis error repellendus magni mollitia! Esse vitae dolorum, fugit nisi placeat deleniti et illum facilis quae neque labore debitis ex qui soluta magni?</p>
-                <h3 class="exp__title">EXPERIENCIA Y SLP</h3>
-            </div>
 
-            <div class="lvl__table">    
-                <h3 class="lvl__title">TABLA</h3>
+        <section class="adventure container-fluid">
+            <div class="adv__content container-lg">
+                <article class="row">
+                    <h2 class="adv__title">MODO AVENTURA</h2>
+                    <div class="col-lg">
+                        <h3 class="energy__title">ENERGÍAS</h3>
+                        <p class="energy__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima assumenda ut esse dicta neque enim! Labore impedit quaerat tempora cum fugiat ut neque eum, doloremque rerum sunt perspiciatis error repellendus magni mollitia! Esse vitae dolorum, fugit nisi placeat deleniti et illum facilis quae neque labore debitis ex qui soluta magni?</p>
+                    </div>
+                    <div class="col-lg">
+                        <h3 class="exp__title">EXPERIENCIA Y SLP</h3>
+                        <p class="exp__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima assumenda ut esse dicta neque enim! Labore impedit quaerat tempora cum fugiat ut neque eum, doloremque rerum sunt perspiciatis error repellendus magni mollitia! Esse vitae dolorum, fugit nisi placeat deleniti et illum facilis quae neque labore debitis ex qui soluta magni?</p>
+                    </div>
+                </article>
                 <img src="../assets/lvl__table.jpeg" alt="tabla" class="lvl__img">
+
             </div>
         </section>
-        <section>
-            <h2 class="bans__title">MOTIVOS DE BAN</h2>
-            <div class="bans">
-                <div>
-                    <h3>MULTIACCOUNTING</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur neque nobis, totam est soluta natus beatae iusto. Odio repellendus rerum autem magni adipisci? Assumenda, consequatur fuga perferendis, reiciendis id saepe deleniti delectus quibusdam eaque veniam dolores fugit ipsum magni non, eligendi iusto temporibus aspernatur iste eos sapiente. Cumque, sed debitis?</p>
-                </div>
-                <div>
-                    <h3>COMPARTIR AXIES</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur neque nobis, totam est soluta natus beatae iusto. Odio repellendus rerum autem magni adipisci? Assumenda, consequatur fuga perferendis, reiciendis id saepe deleniti delectus quibusdam eaque veniam dolores fugit ipsum magni non, eligendi iusto temporibus aspernatur iste eos sapiente. Cumque, sed debitis?</p>
-                </div>
-                <div>
-                    <h3>USO DE BOTS</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur neque nobis, totam est soluta natus beatae iusto. Odio repellendus rerum autem magni adipisci? Assumenda, consequatur fuga perferendis, reiciendis id saepe deleniti delectus quibusdam eaque veniam dolores fugit ipsum magni non, eligendi iusto temporibus aspernatur iste eos sapiente. Cumque, sed debitis?</p>
-                </div>
+
+        <section class="bans container-fluid">
+            <div class="bans__content container-lg">
+                <h2 class="bans__title">MOTIVOS DE BAN</h2>
+                <article class="row">
+                    <div class="col-lg">
+                        <h3>MULTIACCOUNTING</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur neque nobis, totam est soluta natus beatae iusto. Odio repellendus rerum autem magni adipisci? Assumenda, consequatur fuga perferendis, reiciendis id saepe deleniti delectus quibusdam eaque veniam dolores fugit ipsum magni non, eligendi iusto temporibus aspernatur iste eos sapiente. Cumque, sed debitis?</p>
+                    </div>
+                    <div class="col-lg">
+                        <h3>COMPARTIR AXIES</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur neque nobis, totam est soluta natus beatae iusto. Odio repellendus rerum autem magni adipisci? Assumenda, consequatur fuga perferendis, reiciendis id saepe deleniti delectus quibusdam eaque veniam dolores fugit ipsum magni non, eligendi iusto temporibus aspernatur iste eos sapiente. Cumque, sed debitis?</p>
+                    </div>
+                    <div class="col-lg">
+                        <h3>USO DE BOTS</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur neque nobis, totam est soluta natus beatae iusto. Odio repellendus rerum autem magni adipisci? Assumenda, consequatur fuga perferendis, reiciendis id saepe deleniti delectus quibusdam eaque veniam dolores fugit ipsum magni non, eligendi iusto temporibus aspernatur iste eos sapiente. Cumque, sed debitis?</p>
+                    </div>
+
+                </article>
+
             </div>
         </section>
     </main>
     
-    <footer class="footer">
-        <div class="footer__axie">
-            <img class="footer__axieLogo" src="../assets/axieLogo.png" alt="Redes Axie">
-            <ul class="footer__axieList">
-                <li class="footer__axieList--web"><a href="">Web oficial</a></li>
-                <li class="footer__axieList--ig"><a href="">Instagram</a></li>
-                <li class="footer__axieList--tw"><a href="">Twitter</a></li>
-                <li class="footer__axieList--dc"><a href="">Discord</a></li>
-            </ul>
-        </div>
-        
-        <div class="footer__web">
-            <ul class="footer__webList">
-                <li class="footer__webList--ld"><a href="">Linkedin</a></li>
-                <li class="footer__webList--ig"><a href="">Instagram</a></li>
-                <li class="footer__webList--tw"><a href="">Twitter</a></li>
-                <li class="footer__webList--dc"><a href="">Discord</a></li>
-            </ul>
+    <footer>
+        <div class="footer">
+            <div class="footer__axie">
+                <div>
+                    <img class="logo footer__axieLogo" src="../assets/SVG/logo_white.svg" alt="Redes Axie">
+                    <p class="footer__title">Axie Infinity Oficial</p>
+                </div>
+                <ul class="footer__axieList">
+                    <li><a href="https://axieinfinity.com/" target="blank" title="Web Oficial"><i class="fas fa-globe icon"></i></a></li>
+                    <li><a href="https://www.instagram.com/axieinfinity/" target="blank" title="Axie Instagram"><i class="fab fa-instagram icon"></i></a></li>
+                    <li><a href="https://twitter.com/AxieInfinity" target="blank" title="Axie Twitter"><i class="fab fa-twitter icon"></i></a></li>
+                    <li><a href="https://discord.com/invite/axiees" target="blank" title="Axie Discord Español"><i class="fab fa-discord icon"></i></a></li>
+                </ul>
+            </div>
             
-            <img class="logo footer__webLogo" src="../assets/logo.png" alt="Redes Dev">
+            <div class="footer__web">
+                <div>
+                    <img class="logo footer__webLogo" src="../assets/SVG/logo_white.svg" alt="Redes Dev">
+                    <p class="footer__title">Redes Dev</p>
+                </div>
+                <ul class="footer__webList">
+                    <li><a href="" target="blank" title="Dev Linkedin"><i class="fab fa-linkedin-in icon"></i></a></li>
+                    <li><a href="" target="blank" title="Dev Instagram"><i class="fab fa-instagram icon"></i></a></li>
+                    <li><a href="" target="blank" title="Dev Twitter"><i class="fab fa-twitter icon"></i></a></li>
+                    <li><a href="" target="blank" title="Dev Discord"><i class="fab fa-discord icon"></i></a></li>
+                </ul>
+                
+            </div>
         </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
