@@ -403,70 +403,26 @@ main{
 .myScholar__title,.myScholar__para, .ourScholar__title, .guild__name{
     text-align: center;
 }
+/*  BECAS.HTML  */
 
-
-
-.breed{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin: 1rem;
+/*  ECONOMÍA.HTML   */
+.econ>*{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
-.breed__title{
+.breed__title, .coins, .roi__title{
     text-align: center;
 }
-
-.breed__para, .breed__img{
-    width: 40vw;
+.stake__title{
+    margin-top: 1rem;
+}
+.icono{
+    width: 3rem;
+    margin-left: 1rem;
 }
 
-.coins{
-    margin: 1rem;
-    text-align: center;
-}
+/*  ECONOMÍA.HTML   */
 
-.coins__flex{
-    display: flex;
-}
-
-.roi{
-    margin: 1rem;
-}
-.roi__title{
-    text-align: center;
-}
-.roi__flex{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.roi__img{
-    height: 100px;
-    width: 40rem;
-}
-
-.risk{
-    margin: 1rem;
-}
-.risk__title{
-    text-align: center;
-}
-.risk__title--right{
-    text-align: end;
-}
-.tree__flex{
-    display: flex;
-}
-.stake__flex{
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: space-evenly;
-    margin: 1rem;
-}
-.stake__flex>div>p{
-    width: 40vw;
-}
 
 .combat{
     margin: 1rem;
@@ -711,6 +667,10 @@ input:-webkit-autofill:active{
 
 
 @media screen and (max-width:800px){
+    .econ__video{
+        width: 100%;
+        margin: 0.5rem 0rem 0.5rem 0rem;
+    }
     .nav__li>a{
         font-size: 0.9rem;
         margin: 0rem 0rem 0rem 0.2rem;
@@ -993,6 +953,11 @@ input:-webkit-autofill:active{
         width: 300px;
     }
 }
+@media screen and (max-width: 500px) {
+    .placeholder__img{
+        width: 100%;
+    }
+}
 
 @media screen and (min-width: 801px) {
     .axieSection__carousel{
@@ -1028,6 +993,7 @@ input:-webkit-autofill:active{
     .serviceSection__pvp, .serviceSection__econ, .serviceSection__becas{
         height: 75vw;
     }
+    
 }
 @media screen and (min-width: 992px) {
     .navbar-brand{
