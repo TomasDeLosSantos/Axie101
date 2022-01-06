@@ -41,6 +41,9 @@ header{
     top: 0;
     z-index: 100;
 }
+.container-fluid{
+    padding: 0;
+}
 /*
 .nav__container{
     display: flex;
@@ -176,10 +179,6 @@ header{
 /*------FOOTER------*/
 
 /*------HERO------*/
-
-.hero__container{
-    margin: 1rem;
-}
 .hero__title, .hero__para, .hero__btn{
     text-align: center;
     margin: 0.5rem;
@@ -189,40 +188,44 @@ header{
     text-align: center;
 }
 
+.hero__img{
+    max-width: 600px;
+}
+
 /*------HERO------*/
 
 /*------GAME SECTION------*/
 
 .gameSection{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     height: 60vh;
     margin-top: 3rem;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 }
 .gameSection__title{
     font-size: 3.25rem;
     font-weight: 700;
-    margin-bottom: 1rem;
+    margin-top: 2rem;
     color: #081B3E;
 }
-.gameSection > div>article{
+.gameSection__para{
     text-align: justify;
     font-size: 1.3125rem;
-    margin: 5rem 1.5rem 0rem 1.5rem;
+    margin-top: 1rem;
+
 }
 .gameSection__video{
-    text-align: justify;
-    font-size: 1.3125rem;
-    margin: 10rem 1.5rem 3rem 1.5rem;
+    align-self: flex-end;
+    margin: 8rem 0rem 3rem 1.5rem;
     box-shadow: 0rem 0rem 1rem #081B3E;
 }
+
+/*
 .gameSection__para, .gameSection__video{
     width: 33vw;
-}
+}*/
 .gameSection__img{
-    width: 700px;
+    width: 100%;
+    margin-top: 1rem;
 }
 
 /*------GAME SECTION------*/
@@ -231,10 +234,8 @@ header{
 .axieSection{
     height: 80vh;
     background-color: #042860;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: inline-block;
+    width: 100vw;
 }
 
 .axieSection__title, .axieSection__para{
@@ -246,27 +247,30 @@ header{
     text-align: center;
     color: #fff;
     font-weight: 600;
+    background-color: #006CFF;
+    padding: 0.5rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 100%;
 }
 .axieSection__title{
     font-size: 3.25rem;
     font-weight: 700;
+    margin-top: 3rem;
 }
 .axieSection__para{
     font-size: 1.1rem;
 }
 
 .example__cont{
+    flex:0 1 auto;
+    padding:0;
     background-color: #fff;
     border-radius: 11px;
     margin: 1rem;
     font-size: 1.125rem;
     box-shadow: 0rem 0rem 0.8rem #042860;
-}
-.example__cont>p{
-    background-color: #006CFF;
-    padding: 0.5rem;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    width: 300px;
 }
 .example__cont:hover{
     box-shadow: 0rem 0rem 1rem #C4C4C4;
@@ -280,7 +284,8 @@ header{
     color: #042860;
     background: #00E0B5;
     margin-top: 1rem;
-    margin-left: 0.8rem;
+    margin-left: auto;
+    margin-right: auto;
     box-shadow: 0rem 0rem 0.5rem #fff;   
     transition: 0.1s all;
     width: fit-content;
@@ -296,28 +301,21 @@ header{
 .btn__cont:hover>a{
     color: #fff;
 }
-main{
-    overflow: hidden;
-}
 
 /*------AXIE SECTION------*/
 
 /*------SERVICE SECTION------*/
-
-
-
 .serviceSection__pvp, .serviceSection__econ, .serviceSection__becas{
     background-color: #fff;
     box-shadow: 0rem 0rem 0.5rem #8EBEFF;
     border-radius: 10px;
     padding: 1rem;
-    height: 33vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 33vw;
-    margin: 1rem;
+    margin: 5rem 1rem;
+    height: 33vh;
 }
 .serviceSection__title{
     color: #081B3E;
@@ -329,6 +327,7 @@ main{
 .serviceSection__para{
     font-size: 1.25rem;
     margin-bottom: 1rem;
+    text-align: center;
 }
 .serviceSection__btn{
     padding: 0.1rem 1rem 0.1rem 1rem;
@@ -535,14 +534,11 @@ main{
 .nav__logo{
     width: 70px;
     margin-right: 2rem;
+    margin-left: 1rem;
 }
 .hero__container{
-    margin: 0rem;
-    height: 90vh;
+    height: 85vh;
     background-color: #04266c;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .hero__title{
     font-family: Poppins;
@@ -557,14 +553,10 @@ main{
     font-size: 1.3125rem;
     font-weight: 400;
 }
-.hero__data-img{
-    width: 50vw;
-}
 .hero__data{
-    width: 600px;
     color: #fff;
-    display: flex;
-    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 .hero__btn{
     padding: 0.5rem 1rem 0.5rem 1rem;
@@ -708,9 +700,10 @@ input:-webkit-autofill:active{
     .gameSection>article, .gameSection__video, .serviceSection>*, .statistics__items>div{
         width: auto;
     }
+    /*
     .gameSection>article, .statistics__header, .statistics__items>div, .tiebreak__para, .card__para{
         margin: 1rem;
-    }
+    }*/
     .gameSection__para{
         width: auto;
         margin: 1rem 1rem 0rem 1rem;
@@ -799,12 +792,10 @@ input:-webkit-autofill:active{
 }
 
 @media screen and (min-width: 320px) and (max-width: 800px) {
+    
     .hero__container{
         flex-direction: column;
-        height: 50rem; 
-    }
-    .hero__data>*{
-        margin: 0rem;
+        height: 90vh; 
     }
     .hero__title{
         text-align: center;
@@ -813,19 +804,16 @@ input:-webkit-autofill:active{
     }
     .hero__para{
         text-align: center;
-        width: 100vw;
         align-self: center;
         font-size: 1.1rem;
-        margin: 0.5rem;
+        margin: 1.5rem 0rem 0rem 0rem;
     }
-    .hero__btn{
-        margin: 1rem auto 1rem auto;
+    .hero__data{
+        text-align: center;
     }
     .hero__img{
         width: 100vw;
-    }
-    .hero__data{
-        width: fit-content;
+
     }
 
     .gameSection{
@@ -847,8 +835,8 @@ input:-webkit-autofill:active{
         display: none;
     }
     .gameSection__video{
-        width: auto;
-        margin: 2rem 0rem 0rem 0rem;
+        width: 100%;
+        margin: 1rem 0rem 0rem 0rem;
     }
 
     .axieSection{
@@ -893,27 +881,21 @@ input:-webkit-autofill:active{
     }
 }
 
-
-
 @media screen and (min-width: 700px) and (max-width: 800px) {
-    .hero__container{
+    /*.hero__container{
         height: 70rem;
-    }
+    }*/
     .hero__img{
         width: auto;
+        margin-left: auto;
+        margin-right: auto;
     }
     .nav__logo, .contact__btn{
         display: block;
     }
-    .gameSection__video{
-        width: 60vw;
-    }
 }
 
 @media screen and (min-width: 1000px) and (max-width: 1500px) {
-    .gameSection__para{
-        width: 50vw;
-    }
     .serviceSection__title{
         font-size: 2rem;
     }
@@ -930,7 +912,9 @@ input:-webkit-autofill:active{
         display: none;
     }
     .axieSection__carousel{
-        width: 350px;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
     }
     .example__cont{
         display: flex;
@@ -968,6 +952,7 @@ input:-webkit-autofill:active{
         width: 300px;
     }
 }
+
 @media screen and (max-width: 500px) {
     .placeholder__img{
         width: 100%;
@@ -978,20 +963,18 @@ input:-webkit-autofill:active{
     .axieSection__carousel{
         display: none;
     }
+    /*
     .axieSection__examples{
         display: flex;
         align-items: center;
         justify-content: center;
-    }
+    }*/
     .serviceSection__carousel{
         display: none;
     }
     .serviceSection{
         height: 50vh;
         background-color: #006CFF;
-        display: flex;
-        text-align: center;
-        align-items: center;
     }
 }
 
@@ -1010,11 +993,23 @@ input:-webkit-autofill:active{
     }
     
 }
+
+@media screen and (max-height: 500px){
+    .hero__img{
+        display: none;
+    }
+    .hero__title{
+        margin-top: 3rem;
+    }
+
+}
+
 @media screen and (min-width: 992px) {
     .navbar-brand{
         display: none;
     }
 }
+
 @media screen and (max-width: 992px) {
     .logo__collapsed{
         display: none;

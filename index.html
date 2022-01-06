@@ -75,115 +75,127 @@
   </div>
     <!-- Modal -->
 
-    <main>
+    <main class="container-fluid">
         <section class="hero__container">
-            <div class="hero__data">
-                <h1 class="hero__title">Todo sobre <br>Axie Infinity</h1>
-                <p class="hero__para">Aquí encontrarás todo lo que necesitas saber para comenzar tu aventura en Lunacia. </p>
-                <a class="btn hero__btn" href="./secciones/general.html">COMENCEMOS</a>
-            </div>
-            <div class="hero__data_img">
-                <img src="./assets/axie_miner_image_tp.png" alt="axie display" class="hero__img">
+            <div class="container-lg">
+                <article class="row mx-auto">
+                    <div class="col hero__data">
+                        <h1 class="hero__title">Todo sobre <br>Axie Infinity</h1>
+                        <p class="hero__para">Aquí encontrarás todo lo que necesitas saber para comenzar tu aventura en Lunacia. </p>
+                        <a class="btn hero__btn" href="./secciones/general.html">COMENCEMOS</a>
+                    </div>
+    
+                    <img src="./assets/axie_miner_image_tp.png" alt="axie display" class="col hero__img">
+                </article>
             </div>
         </section>
         
-        <section class="gameSection">
-            <div>
-                <article>
+        
+        <section class="gameSection container-lg">
+            <article class="row">
+                <div class="col-lg-6">
                     <h2 class="gameSection__title">¿Qué es Axie Infinity?</h2>
                     <p class="gameSection__para"> Axie Infinity es un innovador juego, que combina el clásico juego de estrategia por turnos con el género de los juegos de cartas. En este encontraremos combates cortos donde nos enfrentaremos a la IA o a otros jugadores, donde dependiendo de nuestro nivel, nos recompensaran por cada victoria. </p>
-                </article>
-                <img class="gameSection__img" src="./assets/axie_gameloop.jpg" alt="img">
+                    <img class="gameSection__img" src="./assets/axie_gameloop.jpg" alt="img">
 
-            </div>
-            
-            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/WuIH84TGikc?mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="gameSection__video"></iframe>
+                </div>
+                <div class="col-lg-6">
 
-            
+                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/WuIH84TGikc?mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="gameSection__video"></iframe>
+                </div>
+            </article>
         </section>
         
         <section class="axieSection">
-            <article>
+            <div class="container-lg">
                 <h2 class="axieSection__title">¿Qué son los Axies?</h2>
                 <p class="axieSection__para">
-                    Los Axies son criaturas virtuales creadas utilizando la revolucionaria tecnología Blockchain. Esto quiere decir que cada uno de los Axies que existen son únicos! <br>
-                    Existen 9 tipos, y cada uno cuenta con 6 partes que son las que determinarán sus estadísticas y cartas, que nos permitirán construir nuestro mazo para los combates. <br>
+                    Los Axies son criaturas virtuales creadas utilizando la revolucionaria tecnología Blockchain. Esto quiere decir que cada uno de los Axies que existen son únicos!
+                </p>
+                <p class="axieSection__para">
+                    Existen 9 tipos, y cada uno cuenta con 6 partes que son las que determinarán sus estadísticas y cartas, que nos permitirán construir nuestro mazo para los combates.
+                </p>
+                <p class="axieSection__para">
                     Además, existen Axies especiales, cuyas características Místicas hacen que los coleccionistas esten siempre en busca de estos tesoros.
                 </p>
-            </article>
-            <article class="axieSection__examples">
-                <div class="example__cont axie__plant">
-                    <img class="example__img" src="./assets/example_plant.png" alt="Axie Ejemplo 1"></img>
-                    <p class="example__para">Axie tipo Planta</p>
-                </div>
-                <div class="example__cont axie__beast">
-                    <img class="example__img" src="./assets/example_beast.png" alt="Axie Ejemplo 2"></img>
-                    <p class="example__para">Axie tipo Bestia</p>
-                </div>
-                <div class="example__cont axie__bird">
-                    <img class="example__img" src="./assets/example_bird.png" alt="Axie Ejemplo 3"></img>
-                    <p class="example__para">Axie tipo Pájaro</p>
-                </div>
-            </article>
-
-            <article class="axieSection__carousel">
-                <div id="axieSection__car" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="example__cont axie__plant">
-                                <img class="example__img" src="./assets/example_plant.png" alt="Axie Ejemplo 1"></img>
-                                <p class="example__para">Axie tipo Planta</p>
-                            </div>
-                        </div>
-
-                        <div class="carousel-item">
-                            <div class="example__cont axie__beast">
-                                <img class="example__img" src="./assets/example_beast.png" alt="Axie Ejemplo 2"></img>
-                                <p class="example__para">Axie tipo Bestia</p>
-                            </div>
-                        </div>
-
-                        <div class="carousel-item">
-                            <div class="example__cont axie__bird">
-                                <img class="example__img" src="./assets/example_bird.png" alt="Axie Ejemplo 3"></img>
-                                <p class="example__para">Axie tipo Pájaro</p>
-                            </div>
-                        </div>
-                        
+                <article class="row justify-content-center align-items-center axieSection__examples">
+                    <div class="col example__cont">
+                        <img class="example__img" src="./assets/example_plant.png" alt="Axie Ejemplo 1"></img>
+                        <p class="example__para">Axie tipo Planta</p>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#axieSection__car" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#axieSection__car" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                  </div>
-            </article>
+                    <div class="col example__cont">
+                        <img class="example__img" src="./assets/example_beast.png" alt="Axie Ejemplo 2"></img>
+                        <p class="example__para">Axie tipo Bestia</p>
+                    </div>
+                    <div class="col example__cont">
+                        <img class="example__img" src="./assets/example_bird.png" alt="Axie Ejemplo 3"></img>
+                        <p class="example__para">Axie tipo Pájaro</p>
+                    </div>
+                </article>
     
-            
-            <p class="btn__cont"><a class="btn axieSection__btn" href="https://marketplace.axieinfinity.com/axie/" target="blank">CONSIGUE LOS TUYOS</a></p>
-            
+                <article class="axieSection__carousel">
+                    <div id="axieSection__car" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="example__cont axie__plant">
+                                    <img class="example__img" src="./assets/example_plant.png" alt="Axie Ejemplo 1"></img>
+                                    <p class="example__para">Axie tipo Planta</p>
+                                </div>
+                            </div>
+    
+                            <div class="carousel-item">
+                                <div class="example__cont axie__beast">
+                                    <img class="example__img" src="./assets/example_beast.png" alt="Axie Ejemplo 2"></img>
+                                    <p class="example__para">Axie tipo Bestia</p>
+                                </div>
+                            </div>
+    
+                            <div class="carousel-item">
+                                <div class="example__cont axie__bird">
+                                    <img class="example__img" src="./assets/example_bird.png" alt="Axie Ejemplo 3"></img>
+                                    <p class="example__para">Axie tipo Pájaro</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#axieSection__car" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#axieSection__car" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </article>
+        
+                
+                <p class="btn__cont"><a class="btn axieSection__btn" href="https://marketplace.axieinfinity.com/axie/" target="blank">CONSIGUE LOS TUYOS</a></p>
+                
+            </div>
         </section>
     
         <section class="serviceSection">
-            <div class="serviceSection__pvp">
-                <h2 class="serviceSection__title">COMBATES</h2>
-                <p class="serviceSection__para">Tenemos una guía con todo lo que tenes que saber antes de enfrentarte a los mejores entrenadores de Lunacia</p>
-                <a class="btn serviceSection__btn" href="./secciones/pvp.html">Saber más</a>
-            </div>
-    
-            <div class="serviceSection__econ">
-                <h2 class="serviceSection__title">ECONOMÍA</h2>
-                <p class="serviceSection__para">¿Qué es la blockchain? ¿De verdad de gana dinero? Todas tus dudas respecto la econmía de Axie Infinity tienen respuestas aquí</p>
-                <a class="btn serviceSection__btn" href="./secciones/economia.html">Saber más</a>
-            </div>
-    
-            <div class="serviceSection__becas">
-                <h2 class="serviceSection__title">BECAS</h2>
-                <p class="serviceSection__para">Las becas son la forma de entrar al juego sin costo! Enterate como funcionan y cómo formar parte de nuestro equipo de becados</p>
-                <a class="btn serviceSection__btn" href="./secciones/becas.html">Saber más</a>
+            <div class="container-lg">
+                <article class="row my-auto mx-auto">
+                    <div class="col serviceSection__pvp">
+                        <h2 class="serviceSection__title">COMBATES</h2>
+                        <p class="serviceSection__para">Tenemos una guía con todo lo que tenes que saber antes de enfrentarte a los mejores entrenadores de Lunacia</p>
+                        <a class="btn serviceSection__btn" href="./secciones/pvp.html">Saber más</a>
+                    </div>
+            
+                    <div class="col serviceSection__econ">
+                        <h2 class="serviceSection__title">ECONOMÍA</h2>
+                        <p class="serviceSection__para">¿Qué es la blockchain? ¿De verdad de gana dinero? Todas tus dudas respecto la econmía de Axie Infinity tienen respuestas aquí</p>
+                        <a class="btn serviceSection__btn" href="./secciones/economia.html">Saber más</a>
+                    </div>
+            
+                    <div class="col serviceSection__becas">
+                        <h2 class="serviceSection__title">BECAS</h2>
+                        <p class="serviceSection__para">Las becas son la forma de entrar al juego sin costo! Enterate como funcionan y cómo formar parte de nuestro equipo de becados</p>
+                        <a class="btn serviceSection__btn" href="./secciones/becas.html">Saber más</a>
+                    </div>
+                </article>
             </div>
         </section>
 
@@ -262,6 +274,8 @@
         </div>
     </footer>
     <!-- Etiquetas de arquitectura del sitio -->
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
