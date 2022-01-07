@@ -361,30 +361,174 @@ header{
     margin: 3rem 0rem 3rem 0rem;
 }
 
-.stat__title{
+.statistics__title{
     text-align: start;
     font-size: 3.25rem;
     font-weight: 700;
     margin-bottom: 1rem;
     color: #081B3E;
 }
-.stat__para{
-    text-align: start;
+.statistics__para{
+    text-align: center;
+    font-size: 1.3125rem;
+}
+.stat{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 2.5rem 0;
+}
+.stat__subtitle{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #081B3E;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 0.5rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border: 3px solid #081B3E;
+    border-bottom: none;
+}
+.stat__subtitle::before{
+    z-index: -5;
+    width: 250px;
+    height: 50px;
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 50px;
+    background-color: #081B3E;
 }
 
+.stat__subtitle>h4{
+    font-size: 1.8rem;
+    color: #fff;
+}
+.health__icon{
+    padding: 0.5rem;
+    color: #3AC279;
+}
+.speed__icon{
+    padding: 0.5rem;
+    color: #F7AC0A;
 
+}
+.skill__icon{
+    padding: 0.5rem;
+    color: #6A3AC2;
+
+}
+.morale__icon{
+    padding: 0.5rem;
+    color: #C23A3A;
+
+}
+.stat__para{
+    background-color: #fff;
+    text-align: center;
+    font-size: 1.3125rem;
+    padding: 1.2rem 0.5rem 0.5rem 0.5rem;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: 3px solid #081B3E;
+    height: 9.1533rem;
+    /*
+    position: absolute;
+    top: 0;*/
+}
+.stat__items{
+    /*box-shadow: 0rem 0rem 0.8rem #042860;*/
+    border-radius: 15px;
+    padding: 0;
+    position: relative;
+    width: 250px;
+}
+
+.tiebreak__title, .card__title, .energy__title, .exp__title, .ban__subtitle{
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #081B3E;
+}
+.tiebreak__para, .card__para, .energy__para, .exp__para, .ban__para{
+    text-align: center;
+    font-size: 1.3125rem;
+}
+.adv{
+    margin: 0;
+}
+.adventure{
+    display: inline-block;
+    padding-top: 2rem;
+    margin: 4rem 0rem;
+    background-color: #006CFF;
+}
+.adv__title{
+    color: #fff;
+    margin-bottom: 2rem;
+}
+.adv__item{
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 0;
+}
+.energy__title::before{
+    z-index: -5;
+    width: 250px;
+    height: 50px;
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 50px;
+    background-color: #081B3E;
+}
+.energy{
+    margin-right: 1rem;
+}
+.energy__title{
+    width: 584px;
+}
+.energy__para{
+    width: 584px;
+}
+.exp{
+    margin-left: 1rem;
+}
 .adv__content{
     text-align: center;
 }
+.adv__item{
+    background-color: #fff;
+}
+.adv__title, .bans__title{
+    text-align: center;
+    font-size: 3.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #fff;
+}
 
+.energy__title, .exp__title{
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #081B3E;
+}
 .lvl__img{
     padding: 2rem;
     width: 60%;
 }
-
+.bans{
+    background-color: #042860;
+}
 .bans__content{
     text-align: center;
-    margin-bottom: 3rem;
+    padding-bottom: 3rem;
 }
 /* GENERAL.HTML */
 
@@ -537,8 +681,11 @@ header{
     margin-left: 1rem;
 }
 .hero__container{
+    display: inline-block;
+    width: 100vw;
     height: 85vh;
     background-color: #04266c;
+    padding-top: 4rem;
 }
 .hero__title{
     font-family: Poppins;
@@ -694,7 +841,7 @@ input:-webkit-autofill:active{
         margin-left: auto;
         margin-right: auto;
     }
-    .gameSection, .axieSection__examples, .serviceSection, .footer__axie, .footer__web, .statistics__items, .energy, .exp, .bans, .rewards, .types__flex, .morale, .trend__flex, .breed, .coins__flex, .roi__flex, .tree__flex, .stake__flex, .comp__cont{
+    .gameSection, .axieSection__examples, .serviceSection, .footer__axie, .footer__web, .energy, .exp, .bans, .rewards, .types__flex, .morale, .trend__flex, .breed, .coins__flex, .roi__flex, .tree__flex, .stake__flex, .comp__cont{
         flex-direction: column;
     }
     .gameSection>article, .gameSection__video, .serviceSection>*, .statistics__items>div{
@@ -908,6 +1055,7 @@ input:-webkit-autofill:active{
 }
 
 @media screen and (max-width: 800px) {
+    
     .axieSection__examples{
         display: none;
     }
@@ -1013,5 +1161,13 @@ input:-webkit-autofill:active{
 @media screen and (max-width: 992px) {
     .logo__collapsed{
         display: none;
+    }
+}
+@media screen and (max-width: 700px) {
+    .hero__container{
+        padding-top: 0;
+    }
+    .hero__img{
+        width: 250px;
     }
 }
