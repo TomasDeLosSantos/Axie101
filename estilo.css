@@ -448,12 +448,14 @@ header{
     width: 250px;
 }
 
-.tiebreak__title, .card__title, .energy__title, .exp__title, .ban__subtitle{
+.tiebreak__title, .card__title, .ban__subtitle{
     text-align: center;
     font-size: 1.8rem;
     font-weight: 700;
     color: #081B3E;
 }
+
+
 .tiebreak__para, .card__para, .energy__para, .exp__para, .ban__para{
     text-align: center;
     font-size: 1.3125rem;
@@ -464,72 +466,104 @@ header{
 .adventure{
     display: inline-block;
     padding-top: 2rem;
-    margin: 4rem 0rem;
     background-color: #006CFF;
 }
-.adv__title{
-    color: #fff;
-    margin-bottom: 2rem;
-}
-.adv__item{
-    border-radius: 10px;
-    padding: 1rem;
-    margin: 0;
-}
-.energy__title::before{
-    z-index: -5;
-    width: 250px;
-    height: 50px;
-    content: '';
-    position: absolute;
-    left: 0px;
-    top: 50px;
-    background-color: #081B3E;
-}
+
+
 .energy{
     margin-right: 1rem;
-}
-.energy__title{
-    width: 584px;
-}
-.energy__para{
-    width: 584px;
 }
 .exp{
     margin-left: 1rem;
 }
+.energy, .exp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    border-radius: 10px;
+    box-shadow: 0rem 0rem 0.5rem #8ebeff;
+    background-color: #fff;
+}
+.energy__title, .exp__title{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #081B3E;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 0.5rem 0rem;
+    margin-bottom: 0;
+    background-color: #fff;
+}
+
+.energy__para, .exp__para{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #fff;
+    padding: 0.5rem;
+}
+
 .adv__content{
     text-align: center;
-}
-.adv__item{
-    background-color: #fff;
 }
 .adv__title, .bans__title{
     text-align: center;
     font-size: 3.25rem;
     font-weight: 700;
-    margin-bottom: 1rem;
     color: #fff;
+    margin-bottom: 2rem;
+    
 }
-
-.energy__title, .exp__title{
-    text-align: center;
+.adv__icon{
+    color: #3AC279;
     font-size: 1.8rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    color: #081B3E;
+    margin: 1rem 1rem 0rem 1rem ;
 }
 .lvl__img{
     padding: 2rem;
     width: 60%;
 }
+
+
 .bans{
-    background-color: #042860;
+    background-color: #00072D;
+}
+.bans__title{
+    padding-top: 2rem;
 }
 .bans__content{
     text-align: center;
     padding-bottom: 3rem;
 }
+.ban__item{
+    background-color: #C23A3A;
+    border: 3px solid #C23A3A  ;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-radius: 10px;
+    box-shadow: 0rem 0rem 0.8rem #042860;
+}
+.ban__subtitle{
+    padding-top: 1rem;
+    color: #fff;
+}
+.ban__para{
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.ban__icon{
+    color: #C23A3A;
+    font-size: 1.8rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
 /* GENERAL.HTML */
 
 /*  BECAS.HTML  */
