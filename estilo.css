@@ -278,6 +278,7 @@ header{
 
 .example__img{
     width: 300px;
+    height: 400px;
 }
 .btn__cont{
     border-radius: 50px;
@@ -353,6 +354,7 @@ header{
 
 /* GENERAL.HTML */
 /*------A------*/
+
 .statistics__content{
     text-align: center;
     margin-top: 2rem;
@@ -360,14 +362,34 @@ header{
 .statistics__content>.row{
     margin: 3rem 0rem 3rem 0rem;
 }
-
-.statistics__title{
-    text-align: start;
-    font-size: 3.25rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    color: #081B3E;
+.separator{
+    border-bottom: 4px solid #081B3E;
+    position: relative;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
 }
+.statistics__title{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #081B3E;
+    background-color: #fff;
+    text-align: start;
+    position: absolute;
+    top: -1.25rem;
+    left: 5rem;
+    letter-spacing: .5rem;
+    line-height: 1;
+    padding-left: 1rem;
+    padding-right: 0.5rem;
+}
+/*
+.statistics__title::after{
+    content: '';
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    background-color: #081B3E;
+}*/
 .statistics__para{
     text-align: center;
     font-size: 1.3125rem;
@@ -466,14 +488,15 @@ header{
 .adventure{
     display: inline-block;
     padding-top: 2rem;
-    background-color: #006CFF;
 }
 
 
 .energy{
+    margin-top: 2rem;
     margin-right: 1rem;
 }
 .exp{
+    margin-top: 2rem;
     margin-left: 1rem;
 }
 .energy, .exp{
@@ -484,19 +507,20 @@ header{
     padding: 0;
     border-radius: 10px;
     box-shadow: 0rem 0rem 0.5rem #8ebeff;
-    background-color: #fff;
+    background-color: #081B3E;
+    border-radius: 10px;
+    border: 3px solid #081B3E;
 }
 .energy__title, .exp__title{
     text-align: center;
     font-size: 2rem;
     font-weight: 700;
-    color: #081B3E;
+    color: #fff;
     width: 100%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     padding: 0.5rem 0rem;
     margin-bottom: 0;
-    background-color: #fff;
 }
 
 .energy__para, .exp__para{
@@ -504,36 +528,33 @@ header{
     border-bottom-right-radius: 10px;
     background-color: #fff;
     padding: 0.5rem;
+    border-radius: 10px;
 }
 
 .adv__content{
     text-align: center;
 }
 .adv__title, .bans__title{
-    text-align: center;
-    font-size: 3.25rem;
+    text-align: start;
+    font-size: 2.5rem;
     font-weight: 700;
-    color: #fff;
+    color: #081B3E;
+    background-color: #fff;
     margin-bottom: 2rem;
+    position: absolute;
+    top: -1.25rem;
+    left: 5rem;
+    letter-spacing: .5rem;
+    line-height: 1;
+    padding-left: 1rem;
+    padding-right: 0.5rem;
     
-}
-.adv__icon{
-    color: #3AC279;
-    font-size: 1.8rem;
-    margin: 1rem 1rem 0rem 1rem ;
 }
 .lvl__img{
     padding: 2rem;
     width: 60%;
 }
 
-
-.bans{
-    background-color: #00072D;
-}
-.bans__title{
-    padding-top: 2rem;
-}
 .bans__content{
     text-align: center;
     padding-bottom: 3rem;
@@ -543,6 +564,7 @@ header{
     border: 3px solid #C23A3A  ;
     padding-left: 0;
     padding-right: 0;
+    margin-top: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
     border-radius: 10px;
@@ -556,12 +578,6 @@ header{
     padding: 1rem;
     background-color: #fff;
     border-radius: 10px;
-}
-.ban__icon{
-    color: #C23A3A;
-    font-size: 1.8rem;
-    margin-right: 1rem;
-    margin-left: 1rem;
 }
 
 /* GENERAL.HTML */
@@ -970,6 +986,8 @@ input:-webkit-autofill:active{
     .stake__flex>div>p{
         width: auto;
     }
+
+    
 }
 
 @media screen and (min-width: 320px) and (max-width: 800px) {
@@ -1054,11 +1072,36 @@ input:-webkit-autofill:active{
     .serviceSection__btn{
         margin: 0rem;
     }
-
-
     .footer{
         font-size: 0.7rem;
         overflow: hidden;
+    }
+    .separator{
+        margin-top: 0;
+    }
+    .stat{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .stat__items{
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+    .energy{
+        margin: 0;
+    }
+    .exp{
+        margin: 1rem 0 0 0;
+    }
+    .bans__title{
+        top: 0;
+    }
+    .ban__item{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 
@@ -1129,11 +1172,7 @@ input:-webkit-autofill:active{
 
 }
 
-@media screen and (max-width: 400px) {
-    .axieSection__carousel{
-        width: 300px;
-    }
-}
+
 
 @media screen and (max-width: 500px) {
     .placeholder__img{
@@ -1197,11 +1236,37 @@ input:-webkit-autofill:active{
         display: none;
     }
 }
+@media screen and (max-width: 750px) {
+    .separator{
+        border: none;
+        align-items: center;
+        margin-bottom: 0;
+    }
+    .separator>h2{
+        text-align: center;
+        position: relative;
+        left: auto;
+        font-size: 2rem;
+    }
+    .statistics__para{
+        margin-top: 0;
+    }
+}
 @media screen and (max-width: 700px) {
     .hero__container{
         padding-top: 0;
     }
     .hero__img{
         width: 250px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .axieSection__carousel{
+        width: 300px;
+    }
+    .statistics__title{
+        padding: 0;
+        letter-spacing: .2rem;
     }
 }
