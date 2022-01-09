@@ -278,7 +278,6 @@ header{
 
 .example__img{
     width: 300px;
-    height: 400px;
 }
 .btn__cont{
     border-radius: 50px;
@@ -360,7 +359,7 @@ header{
     margin-top: 2rem;
 }
 .statistics__content>.row{
-    margin: 3rem 0rem 3rem 0rem;
+    margin: 3rem 0rem 0rem 0rem;
 }
 .separator{
     border-bottom: 4px solid #081B3E;
@@ -482,6 +481,16 @@ header{
     text-align: center;
     font-size: 1.3125rem;
 }
+
+.gral__img{
+    width: 80%;
+    border-radius: 3%;
+}
+.gral__img-para{
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 1.125rem;
+}
 .adv{
     margin: 0;
 }
@@ -494,10 +503,12 @@ header{
 .energy{
     margin-top: 2rem;
     margin-right: 1rem;
+    margin-bottom: 2rem;
 }
 .exp{
     margin-top: 2rem;
     margin-left: 1rem;
+    margin-bottom: 2rem;
 }
 .energy, .exp{
     display: flex;
@@ -1170,6 +1181,10 @@ input:-webkit-autofill:active{
         font-size: 2rem;
     }
 
+    .adventure__img{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
 }
 
 
