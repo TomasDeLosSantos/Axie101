@@ -1,0 +1,45 @@
+/*------HERO------*/
+.hero{
+    &__title{
+        margin: 0.5rem; 
+        font-size: 5.125rem;
+        line-height: 1;
+        text-align: start;
+    }
+    &__para{
+        margin: 0.5rem; 
+        margin-top: 1rem;
+        text-align: start;
+        font-size: 1.3125rem;
+        font-weight: 400;
+    }
+    &__data{
+        color: #fff;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    &__btn{
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        border-radius: 50px;
+        color: #042860;
+        background: #00E0B5;
+        margin-top: 1rem;
+        margin-left: 0.8rem;
+        box-shadow: 0rem 0rem 0.5rem #fff;   
+        transition: 0.1s all;
+        width: fit-content;
+        font-size: 22px; 
+        &:hover{
+            box-shadow: 0rem 0rem 0.8rem #fff;
+            color: #fff;
+        }
+    }
+    &__container{
+        display: inline-block;
+        width: 100vw;
+        height: 85vh;
+        background-color: #04266c;
+        padding-top: 4rem;
+    }
+}
+/*------HERO------*/

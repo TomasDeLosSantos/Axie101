@@ -1,0 +1,88 @@
+/*------MODAL------*/
+input{
+    padding: 0.5rem;
+    &:focus{
+        border-bottom: none;
+        outline: solid 1px #081B3E;
+    }
+    &:-webkit-autofill{
+        box-shadow: 0 0 0 30px #fff inset !important;
+        &:hover, &:focus, &:active{
+            box-shadow: 0 0 0 30px #fff inset !important;
+        }
+    }
+}
+textarea{
+    padding: 0.5rem;
+}
+.modal-title{
+    color: #081B3E;
+    font-weight: 700;
+    margin-right: 0.2rem;
+}
+.form{
+    &__exp{
+        &-yes, &-no{
+            display: inline-block;
+            margin: 0.5rem;
+            b{
+                color: #081B3E;
+                font-weight: 700;
+                margin-right: 0.2rem;
+            }
+        }
+    }
+    &__name, &__age, &__genre, &__email, &__dc{
+        margin-bottom: 1rem;
+        width: 100%;
+        border: none;
+        border-bottom: solid 1px #081B3E;
+    }
+    &__text{
+        width: 100%;
+        resize: none;
+        border: none;
+        border-bottom: 1px solid #081B3E;
+        margin-bottom: 1rem;
+        &:focus{
+            border-bottom: none;
+            outline: solid 1px #081B3E;
+        }        
+    }
+    &__btns{
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__reset, &__submit{
+        padding: 0.1rem 1rem 0.1rem 1rem;
+        border: none;
+        border-radius: 50px;
+        margin-top: 1rem;
+        margin-left: 0.8rem;
+        box-shadow: 0rem 0rem 0.5rem #042860;   
+        transition: 0.1s all;
+        width: fit-content;
+        font-size: 1.375rem;
+    }
+    &__reset{
+        color: #081B3E;
+        background: none;
+        box-shadow: none;
+        border-radius: 0;
+        padding: 0;
+        margin-right: 0.5rem;
+        font-size: 1.2rem;
+        &:hover{
+            border-bottom: 1px solid #081B3E;
+        }
+    }
+    &__submit{
+        color: #fff;
+        background: #081B3E;
+        &:hover{
+            box-shadow: 0rem 0rem 1rem #042860;
+            background: #00E0B5;
+        }
+    }
+}
+/*------MODAL------*/

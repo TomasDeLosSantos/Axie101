@@ -1,0 +1,55 @@
+/*------NAV------*/
+header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.navbar{
+    background-color: #006CFF;
+}
+.bars__icon{
+    color: #fff;
+    font-size: 2rem;
+}
+.nav{
+    &__li{
+        color: #8EBEFF;
+        font-size: 1rem;
+        margin: 1rem;
+        text-decoration: none;
+        text-align: center;
+    
+        &:visited{
+            color: #8EBEFF;
+        }
+        &:hover{
+            color: #fff;
+        }
+    }
+    &__logo{
+        width: 70px;
+        margin-right: 2rem;
+        margin-left: 1rem;
+    }
+}
+.contact__btn{
+    background-color: #00E0B5;
+    background-image: linear-gradient(45deg, rgba(255,0,108,1) 25%, rgba(4,40,96,1) 50%);
+    background-size: 500%;
+    background-position: right;
+    color: #fff;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    text-decoration: none;
+    padding: 0.5rem 1rem 0.5rem;
+    margin: 1rem;
+    transition: 1s background-position;
+
+    &:hover{
+        color: #fff;
+        background-position: left;
+    }
+}
+/*------NAV------*/

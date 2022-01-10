@@ -1,0 +1,233 @@
+@media screen and (max-width: 800px) {
+    .nav{
+        &__li{
+            a{
+                font-size: 0.9rem;
+                margin: 0rem 0rem 0rem 0.2rem;
+            }
+        }
+    }
+    .example{
+        &__img{
+            width: 220px;
+        }
+        &__cont{
+            margin: 1rem 0rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__para{
+            width: 100%;
+        }
+    }
+    .nav{
+        &__container{
+            display: none;
+        }
+    }
+    .footer{
+        &__axie, &__web{
+            flex-direction: column;
+        }
+    }
+    .hero{
+        &__container{
+            flex-direction: column;
+            height: 90vh; 
+        }
+        &__title{
+            text-align: center;
+            font-size: 2.5rem;
+            margin-top: 2rem;
+        }
+        &__para{
+            text-align: center;
+            align-self: center;
+            font-size: 1.1rem;
+            margin: 1.5rem 0rem 0rem 0rem;
+        }
+        &__data{
+            text-align: center;
+        }
+        &__img{
+            width: 100vw;
+        }
+    }
+
+    .gameSection{
+        height: auto;
+        div{
+            article{
+                margin: 0;
+            }
+        }
+        &__title{
+            font-size: 2.5rem;
+            text-align: center;
+            line-height: 1.1;
+        }
+        &__para{
+            width: auto;
+            margin: 1rem 1rem 0rem 1rem;
+            text-align: center;
+            font-size: 1.1rem;
+        }
+        &__img{
+            display: none;
+        }
+        &__video{
+            width: 100%;
+            margin: 1rem 0rem 0rem 0rem;
+        }
+    }
+    .axieSection{
+        height: auto;
+        padding-bottom: 2rem;
+        &__title{
+            font-size: 2.5rem;
+            text-align: center;
+            line-height: 1.1;
+            margin-top: 2rem;
+        }
+        &__para{
+            text-align: center;
+            font-size: 1.1rem;
+        }
+        &__examples{
+            display: none;
+        }
+        &__carousel{
+            width: 300px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    .serviceSection{
+        display: none;
+        height: auto;
+        &__title{
+            font-size: 2rem;
+            margin: 0rem;
+        }
+        &__para{
+            text-align: center;
+            font-size: 1rem;
+        }
+        &__btn{
+            margin: 0;
+        }
+        &__carousel{
+            background-color: #006CFF;
+            width: 100%;
+        }
+        &__pvp, &__econ, &__becas{
+            width: 75vw;
+            margin: 3rem auto 3rem auto;
+        }
+    }
+    .footer{
+        font-size: 0.7rem;
+        overflow: hidden;
+        &__axie, &__web{
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        &__axieLogo, &__webLogo{
+            width: 80px;
+        }
+    }
+}
+@media screen and (min-width: 700px) and (max-width: 800px) {
+    .hero__img{
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .nav__logo, .contact__btn{
+        display: block;
+    }
+}
+@media screen and (min-width: 1000px) and (max-width: 1500px) {
+    .serviceSection{
+        &__title{
+            font-size: 2rem;
+        }
+        &__para{
+            font-size: 1.2rem;
+        }
+        &__btn{
+            font-size: 1.5rem;
+        }
+    }
+}
+@media screen and (min-width: 801px) {
+    .axieSection{
+        &__carousel{
+            display: none;
+        }
+    }
+    .serviceSection{
+        height: 50vh;
+        background-color: #006CFF;
+        &__carousel{
+            display: none;
+        }
+    }
+}
+@media screen and (max-height: 650px) {
+    .serviceSection{
+        &__title{
+            font-size: 2rem;
+        }
+        &__btn, &__para{
+            font-size: 0.8rem;
+        }
+        &__pvp, &__econ, &__becas{
+            height: 75vw;
+        }
+    }
+}
+@media screen and (max-height: 500px) {
+    .hero{
+        &__img{
+            display: none;
+        }
+        &__title{
+            margin-top: 3rem;
+        }
+    }
+}
+@media screen and (min-width: 992px) {
+    .navbar{
+        &-brand{
+            display: none;
+        }
+    }
+}
+@media screen and (max-width: 992px) {
+    .logo{
+        &__collapsed{
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .hero{
+        &__container{
+            padding-top: 0;
+        }
+        &__img{
+            width: 250px;
+        }
+    }
+}
+@media screen and (max-width: 400px) {
+    .axieSection{
+        &__carousel{
+            width: 300px;
+        }
+    }
+}

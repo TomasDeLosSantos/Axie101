@@ -1,0 +1,28 @@
+/*------GAME SECTION------*/
+.gameSection{
+    height: 60vh;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+    &__title{
+        font-size: 3.25rem;
+        font-weight: 700;
+        margin-top: 2rem;
+        color: #081B3E;
+    }
+    &__para{
+        text-align: justify;
+        font-size: 1.3125rem;
+        margin-top: 1rem;
+    }
+    &__video{
+        align-self: flex-end;
+        margin: 8rem 0rem 3rem 1.5rem;
+        box-shadow: 0rem 0rem 1rem #081B3E;
+    }
+    &__img{
+        width: 100%;
+        margin-top: 1rem;
+    }
+}
+/*------GAME SECTION------*/
