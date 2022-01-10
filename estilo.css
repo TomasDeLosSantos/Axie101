@@ -997,8 +997,6 @@ input:-webkit-autofill:active{
     .stake__flex>div>p{
         width: auto;
     }
-
-    
 }
 
 @media screen and (min-width: 320px) and (max-width: 800px) {
@@ -1187,8 +1185,6 @@ input:-webkit-autofill:active{
     }
 }
 
-
-
 @media screen and (max-width: 500px) {
     .placeholder__img{
         width: 100%;
@@ -1251,6 +1247,7 @@ input:-webkit-autofill:active{
         display: none;
     }
 }
+
 @media screen and (max-width: 750px) {
     .separator{
         border: none;
@@ -1267,6 +1264,7 @@ input:-webkit-autofill:active{
         margin-top: 0;
     }
 }
+
 @media screen and (max-width: 700px) {
     .hero__container{
         padding-top: 0;
