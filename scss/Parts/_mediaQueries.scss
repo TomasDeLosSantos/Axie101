@@ -26,6 +26,11 @@
             display: none;
         }
     }
+    .contact__btn{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
     .footer{
         &__axie, &__web{
             flex-direction: column;

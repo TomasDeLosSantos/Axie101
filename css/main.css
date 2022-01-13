@@ -605,6 +605,20 @@ textarea {
   padding-left: 1rem;
   padding-right: 0.5rem; }
 
+.combat__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #081B3E;
+  background-color: #fff;
+  text-align: start;
+  position: absolute;
+  top: -1.25rem;
+  left: 5rem;
+  letter-spacing: .5rem;
+  line-height: 1;
+  padding-left: 1rem;
+  padding-right: 0.5rem; }
+
 @media screen and (max-width: 800px) {
   .nav__li a {
     font-size: 0.9rem;
@@ -620,6 +634,10 @@ textarea {
     width: 100%; }
   .nav__container {
     display: none; }
+  .contact__btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
   .footer__axie, .footer__web {
     flex-direction: column; }
   .hero__container {
