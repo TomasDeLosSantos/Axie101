@@ -457,12 +457,8 @@ header{
     border-bottom-right-radius: 15px;
     border: 3px solid #081B3E;
     height: 9.1533rem;
-    /*
-    position: absolute;
-    top: 0;*/
 }
 .stat__items{
-    /*box-shadow: 0rem 0rem 0.8rem #042860;*/
     border-radius: 15px;
     padding: 0;
     position: relative;

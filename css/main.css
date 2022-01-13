@@ -388,6 +388,223 @@ textarea {
     color: #fff; }
 
 /*------SERVICE SECTION------*/
+.separator {
+  border-bottom: 4px solid #081B3E;
+  position: relative;
+  margin-top: 3rem;
+  margin-bottom: 2rem; }
+
+.statistics__content {
+  text-align: center;
+  margin-top: 2rem; }
+  .statistics__content .row {
+    margin: 3rem 0rem 0rem 0rem; }
+
+.statistics__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #081B3E;
+  background-color: #fff;
+  text-align: start;
+  position: absolute;
+  top: -1.25rem;
+  left: 5rem;
+  letter-spacing: .5rem;
+  line-height: 1;
+  padding-left: 1rem;
+  padding-right: 0.5rem; }
+
+.statistics__para {
+  text-align: center;
+  font-size: 1.3125rem; }
+
+.stat {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 2.5rem 0; }
+  .stat__subtitle {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #081B3E;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 0.5rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border: 3px solid #081B3E;
+    border-bottom: none; }
+    .stat__subtitle::before {
+      z-index: -5;
+      width: 250px;
+      height: 50px;
+      content: '';
+      position: absolute;
+      left: 0px;
+      top: 50px;
+      background-color: #081B3E; }
+    .stat__subtitle h4 {
+      font-size: 1.8rem;
+      color: #fff; }
+  .stat__para {
+    background-color: #fff;
+    text-align: center;
+    font-size: 1.3125rem;
+    padding: 1.2rem 0.5rem 0.5rem 0.5rem;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: 3px solid #081B3E;
+    height: 9.1533rem; }
+  .stat__items {
+    border-radius: 15px;
+    padding: 0;
+    position: relative;
+    width: 250px; }
+  .stat .health__icon {
+    padding: 0.5rem;
+    color: #3AC279; }
+  .stat .speed__icon {
+    padding: 0.5rem;
+    color: #F7AC0A; }
+  .stat .skill__icon {
+    padding: 0.5rem;
+    color: #6A3AC2; }
+  .stat .morale__icon {
+    padding: 0.5rem;
+    color: #C23A3A; }
+
+.tiebreak__title, .card__title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #081B3E; }
+
+.tiebreak__para, .card__para {
+  text-align: center;
+  font-size: 1.3125rem; }
+
+.gral__img {
+  width: 80%;
+  border-radius: 3%; }
+  .gral__img-para {
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 1.125rem; }
+
+.adv {
+  margin: 0; }
+  .adv__content {
+    text-align: center; }
+  .adv__title {
+    text-align: start;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #081B3E;
+    background-color: #fff;
+    margin-bottom: 2rem;
+    position: absolute;
+    top: -1.25rem;
+    left: 5rem;
+    letter-spacing: .5rem;
+    line-height: 1;
+    padding-left: 1rem;
+    padding-right: 0.5rem; }
+
+.adventure {
+  display: inline-block;
+  padding-top: 2rem; }
+
+.energy {
+  margin-top: 2rem;
+  margin-right: 1rem;
+  margin-bottom: 2rem; }
+
+.exp {
+  margin-top: 2rem;
+  margin-left: 1rem;
+  margin-bottom: 2rem; }
+
+.energy, .exp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border-radius: 10px;
+  box-shadow: 0rem 0rem 0.5rem #8ebeff;
+  background-color: #081B3E;
+  border-radius: 10px;
+  border: 3px solid #081B3E; }
+  .energy__title, .exp__title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 0.5rem 0rem;
+    margin-bottom: 0; }
+  .energy__para, .exp__para {
+    text-align: center;
+    font-size: 1.3125rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #fff;
+    padding: 0.5rem;
+    border-radius: 10px; }
+
+.lvl__img {
+  padding: 2rem;
+  width: 60%; }
+
+.ban__subtitle {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding-top: 1rem;
+  color: #fff; }
+
+.ban__para {
+  text-align: center;
+  font-size: 1.3125rem;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 10px; }
+
+.ban__item {
+  background-color: #C23A3A;
+  border: 3px solid #C23A3A;
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-radius: 10px;
+  box-shadow: 0rem 0rem 0.8rem #042860; }
+
+.bans__content {
+  text-align: center;
+  padding-bottom: 3rem; }
+
+.bans__title {
+  text-align: start;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #081B3E;
+  background-color: #fff;
+  margin-bottom: 2rem;
+  position: absolute;
+  top: -1.25rem;
+  left: 5rem;
+  letter-spacing: .5rem;
+  line-height: 1;
+  padding-left: 1rem;
+  padding-right: 0.5rem; }
+
 @media screen and (max-width: 800px) {
   .nav__li a {
     font-size: 0.9rem;
@@ -481,7 +698,27 @@ textarea {
       justify-content: center;
       text-align: center; }
     .footer__axieLogo, .footer__webLogo {
-      width: 80px; } }
+      width: 80px; }
+  .separator {
+    margin-top: 1rem; }
+  .stat {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .stat__items {
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem; }
+  .energy {
+    margin: 0; }
+  .exp {
+    margin: 1rem 0 0 0; }
+  .ban__item {
+    width: 100%; }
+  .adventure__img {
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
+  .gral__img-para {
+    margin-bottom: 2rem; } }
 
 @media screen and (min-width: 700px) and (max-width: 800px) {
   .hero__img {
@@ -530,6 +767,29 @@ textarea {
   .logo__collapsed {
     display: none; } }
 
+@media screen and (max-width: 750px) {
+  .separator {
+    border: none;
+    align-items: center;
+    margin-bottom: 0;
+    position: relative; }
+    .separator h2 {
+      position: relative;
+      text-align: center;
+      display: inline-block;
+      top: 0;
+      left: 0;
+      font-size: 2rem; }
+  .statistics__title {
+    margin-bottom: 1rem; }
+  .statistics__para {
+    margin-top: 0; }
+  .tiebreak__title, .card__title {
+    font-size: 1.5rem; }
+  .bans__title {
+    margin-top: 1rem;
+    margin-bottom: 0; } }
+
 @media screen and (max-width: 700px) {
   .hero__container {
     padding-top: 0; }
@@ -538,4 +798,7 @@ textarea {
 
 @media screen and (max-width: 400px) {
   .axieSection__carousel {
-    width: 300px; } }
+    width: 300px; }
+  .statistics__title {
+    padding: 0;
+    letter-spacing: .2rem; } }

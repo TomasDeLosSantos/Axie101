@@ -1,0 +1,48 @@
+.ban{
+    &__subtitle{
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: 700;
+        padding-top: 1rem;
+        color: #fff;
+    }
+    &__para{
+        text-align: center;
+        font-size: 1.3125rem;
+        padding: 1rem;
+        background-color: #fff;
+        border-radius: 10px;
+    }
+    &__item{
+        background-color: #C23A3A;
+        border: 3px solid #C23A3A  ;
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        border-radius: 10px;
+        box-shadow: 0rem 0rem 0.8rem #042860;
+    }
+}
+.bans{
+    &__content{
+        text-align: center;
+        padding-bottom: 3rem;
+    }
+    &__title{
+        text-align: start;
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #081B3E;
+        background-color: #fff;
+        margin-bottom: 2rem;
+        position: absolute;
+        top: -1.25rem;
+        left: 5rem;
+        letter-spacing: .5rem;
+        line-height: 1;
+        padding-left: 1rem;
+        padding-right: 0.5rem;
+    }
+}
