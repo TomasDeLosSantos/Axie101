@@ -630,6 +630,10 @@ textarea {
   font-weight: 700;
   color: #081B3E; }
 
+.combat__para {
+  margin-top: 1rem;
+  margin-bottom: 2rem; }
+
 .table__arena {
   text-align: center; }
 
@@ -651,16 +655,24 @@ textarea {
   position: absolute;
   top: 0;
   z-index: 10;
-  padding: 1rem;
+  padding: 1rem 1rem 0.5rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #fff;
   background-color: #081B3E;
   border-radius: 10px;
   width: 100%;
   opacity: 0;
-  transition: all .09s; }
+  transition: all .1s; }
+
+.slp__icon {
+  width: 25px;
+  margin-left: 0.2rem;
+  margin-right: 0.2rem; }
 
 .types__img {
-  width: 200px; }
+  width: 500px; }
 
 .morale__title {
   font-size: 2.1rem; }
