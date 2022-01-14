@@ -1,16 +1,153 @@
+@mixin fontConfig($size, $align, $weight){
+    font-size: $size;
+    text-align: $align;
+    font-weight: $weight;
+}
+.title{
+    @include fontConfig(2.5rem, start, 700);
+    color: #081B3E;
+    background-color: #fff;
+    position: absolute;
+    top: -1.25rem;
+    left: 5rem;
+    letter-spacing: .5rem;
+    line-height: 1;
+    padding-left: 1rem;
+    padding-right: 0.5rem;
+}
+.para-centered{
+    @include fontConfig(1.3125rem, center, 400);
+}
+.subtitle{
+    @include fontConfig(1.8rem, center, 700);
+    color: #081B3E;
+}
 .combat{
     &__title{
-        font-size: 2.5rem;
-        font-weight: 700;
-        color: #081B3E;
-        background-color: #fff;
-        text-align: start;
+        @extend .title;
+    }
+    &__para{
+        @extend .para-centered;
+    }
+}
+.rewards{
+    &__title{
+        @extend .subtitle;
+    }
+    &__para{
+        @extend .para-centered;
+    }
+}
+.table{
+    &__arena{
+        text-align: center;
+    }
+    &__cont{
+        position: relative;
+        transition: all 1s;
+        &:hover{
+            .table__slp{
+                opacity: 1;
+            }
+        }
+    }
+    &__cup{
+        padding: 1rem;
+        color: #fff;
+        background-color: #081B3E;
+        border-radius: 10px;
+        width: 100%;
+        opacity: 1;
+    }
+    &__slp{
         position: absolute;
-        top: -1.25rem;
-        left: 5rem;
-        letter-spacing: .5rem;
-        line-height: 1;
-        padding-left: 1rem;
-        padding-right: 0.5rem;
+        top: 0;
+        z-index: 10;
+        padding: 1rem;
+        color: #fff;
+        background-color: #081B3E;
+        border-radius: 10px;
+        width: 100%;
+        opacity: 0;
+        transition: all .09s;
+    }   
+}
+.types{
+    &__title{
+        @extend .title;
+    }
+    &__para{
+        @extend .para-centered;
+    }
+    &__img{
+        width: 200px;
+    }
+}
+.morale{
+    &__title{
+        @extend .subtitle;
+        font-size: 2.1rem;
+    }
+    &__para{
+        @extend .para-centered;
+    }
+}
+@each $buff in aroma, attack-down, attack-up, chill, fear, fragile, jinx, lethal, morale-down, morale-up, poison, sleep, speed-down, speed-up, stench, stun {
+    .#{$buff}{
+        width: 50px;
+        height: 50px;
+        background-image: url(../../assets/buffs/#{$buff}.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+.buff{
+    &__row{
+        border: 2px solid #081B3E;
+        border-radius: 10px;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        padding: 0.5rem
+    }
+    &__title{
+        @extend .title;
+    }
+    &__subtitle{
+        @extend .subtitle;
+        margin-top: 0.5rem;
+        text-transform: uppercase;
+    }
+    &__para{
+        @extend .para-centered;
+    }
+    &__cont{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.comp{
+    &__title{
+        @extend .title;
+    }
+    &__subtitle{
+        @extend .subtitle;
+        margin-top: 2rem;
+    }
+    &__para{
+        @include fontConfig(1.3125rem, start, 400);
+    }
+}
+.trend{
+    &__title{
+        @extend .title;
+    }
+    &__name{
+        @extend .subtitle;
+        text-align: start;
+    }
+    &__para{
+        @extend .para-centered;
+        @include fontConfig(1.3125rem, start, 400);
     }
 }

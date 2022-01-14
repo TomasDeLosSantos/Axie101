@@ -605,12 +605,12 @@ textarea {
   padding-left: 1rem;
   padding-right: 0.5rem; }
 
-.combat__title {
+.title, .combat__title, .types__title, .buff__title, .comp__title, .trend__title {
   font-size: 2.5rem;
+  text-align: start;
   font-weight: 700;
   color: #081B3E;
   background-color: #fff;
-  text-align: start;
   position: absolute;
   top: -1.25rem;
   left: 5rem;
@@ -618,6 +618,196 @@ textarea {
   line-height: 1;
   padding-left: 1rem;
   padding-right: 0.5rem; }
+
+.para-centered, .combat__para, .rewards__para, .types__para, .morale__para, .buff__para, .trend__para {
+  font-size: 1.3125rem;
+  text-align: center;
+  font-weight: 400; }
+
+.subtitle, .rewards__title, .morale__title, .buff__subtitle, .comp__subtitle, .trend__name {
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: 700;
+  color: #081B3E; }
+
+.table__arena {
+  text-align: center; }
+
+.table__cont {
+  position: relative;
+  transition: all 1s; }
+  .table__cont:hover .table__slp {
+    opacity: 1; }
+
+.table__cup {
+  padding: 1rem;
+  color: #fff;
+  background-color: #081B3E;
+  border-radius: 10px;
+  width: 100%;
+  opacity: 1; }
+
+.table__slp {
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  padding: 1rem;
+  color: #fff;
+  background-color: #081B3E;
+  border-radius: 10px;
+  width: 100%;
+  opacity: 0;
+  transition: all .09s; }
+
+.types__img {
+  width: 200px; }
+
+.morale__title {
+  font-size: 2.1rem; }
+
+.aroma {
+  width: 50px;
+  height: 50px;
+  background-image: url(../../assets/buffs/aroma.png);
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.attack-down {
+  width: 50px;
+  height: 50px;
+  background-image: url(../../assets/buffs/attack-down.png);
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.attack-up {
+  width: 50px;
+  height: 50px;
+  background-image: url(../../assets/buffs/attack-up.png);
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.chill {
+  width: 50px;
+  height: 50px;
+  background-image: url(../../assets/buffs/chill.png);
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.fear {
+  width: 50px;
+  height: 50px;
+  background-image: url(../../assets/buffs/fear.png);
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.fragile {
+  width: 50px;
+  height: 50px;
+  background-image: url(../../assets/buffs/fragile.png);
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.jinx {
+  width: 50px;
+  height: 50px;
+  background-image: url(../../assets/buffs/jinx.png);
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.lethal {
+  width: 50px;
+  height: 50px;
+  background-image: url(../../assets/buffs/lethal.png);
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.morale-down {
+  width: 50px;
+  height: 50px;
+  background-image: url(../../assets/buffs/morale-down.png);
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.morale-up {
+  width: 50px;
+  height: 50px;
+  background-image: url(../../assets/buffs/morale-up.png);
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.poison {
+  width: 50px;
+  height: 50px;
+  background-image: url(../../assets/buffs/poison.png);
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.sleep {
+  width: 50px;
+  height: 50px;
+  background-image: url(../../assets/buffs/sleep.png);
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.speed-down {
+  width: 50px;
+  height: 50px;
+  background-image: url(../../assets/buffs/speed-down.png);
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.speed-up {
+  width: 50px;
+  height: 50px;
+  background-image: url(../../assets/buffs/speed-up.png);
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.stench {
+  width: 50px;
+  height: 50px;
+  background-image: url(../../assets/buffs/stench.png);
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.stun {
+  width: 50px;
+  height: 50px;
+  background-image: url(../../assets/buffs/stun.png);
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.buff__row {
+  border: 2px solid #081B3E;
+  border-radius: 10px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem; }
+
+.buff__subtitle {
+  margin-top: 0.5rem;
+  text-transform: uppercase; }
+
+.buff__cont {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.comp__subtitle {
+  margin-top: 2rem; }
+
+.comp__para {
+  font-size: 1.3125rem;
+  text-align: start;
+  font-weight: 400; }
+
+.trend__name {
+  text-align: start; }
+
+.trend__para {
+  font-size: 1.3125rem;
+  text-align: start;
+  font-weight: 400; }
 
 @media screen and (max-width: 800px) {
   .nav__li a {
