@@ -31,6 +31,13 @@
         margin-top: 1rem;
         margin-bottom: 2rem;
     }
+    &__img{
+        width: 80%;
+        border-radius: 3%;
+    }
+    &__row{
+        margin-bottom: 2rem;
+    }
 }
 .rewards{
     &__title{
@@ -82,7 +89,12 @@
     margin-left: 0.2rem;
     margin-right: 0.2rem;
 }
+.type{
+    margin-top: 4rem;
+}
 .types{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     &__title{
         @extend .title;
     }
@@ -90,16 +102,36 @@
         @extend .para-centered;
     }
     &__img{
-        width: 500px;
+        width: 300px;
+        &-triangle{
+            width: 600px;
+            padding-top: 2rem;
+        }
+    }
+    &__subtitle{
+        margin-top: 1rem;
     }
 }
 .morale{
+    &__cont{
+        background-color: #081B3E;
+        padding: 0;
+        padding-top: 0.5rem;
+        border: 3px solid #081B3E;
+        border-radius: 10px;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;   
+    }
     &__title{
         @extend .subtitle;
         font-size: 2.1rem;
+        color: #fff;
     }
     &__para{
         @extend .para-centered;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 0.5rem;
     }
 }
 @each $buff in aroma, attack-down, attack-up, chill, fear, fragile, jinx, lethal, morale-down, morale-up, poison, sleep, speed-down, speed-up, stench, stun {
@@ -112,6 +144,7 @@
     }
 }
 .buff{
+    margin-top: 4rem;
     &__row{
         border: 2px solid #081B3E;
         border-radius: 10px;
@@ -136,7 +169,10 @@
         align-items: center;
     }
 }
+
 .comp{
+    position: relative;
+    overflow: hidden;
     &__title{
         @extend .title;
     }
@@ -145,9 +181,119 @@
         margin-top: 2rem;
     }
     &__para{
-        @include fontConfig(1.3125rem, start, 400);
+        @include fontConfig(1.3125rem, center, 400);
+        color: #fff;
+        background-color: #081B3E;
+        padding: 1rem;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        &-f{
+            border-top-right-radius: 10px;
+            border-top-left-radius: 0px;
+            /*position: absolute;
+            bottom: -90px;*/
+            display: block;
+        }
+        &-m{
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+            /*position: absolute;
+            bottom: -90px;*/
+            display: none;
+        }
+        &-b{
+            border-top-right-radius: 0px;
+            border-top-left-radius: 10px;
+            /*position: absolute;
+            bottom: -90px;*/
+            display: none;
+        }
+    }
+    &__img{
+        z-index: 10;
+        margin: 0;
+        padding: 0;
+    }
+    &__item{
+        padding: 0;
+    }
+    &__input{
+        display: none;
+    }
+    &__label{
+        width: 33%;
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
+    }
+    &__back{
+        z-index: -1;
+        position: absolute;
+        width: 33%;
+        height: 100%;
+        left: 0;
+        background-color: #081B3E;
+        border-radius: 10px;
+        transition: 0.5s all;
+        &::before{
+            visibility: none;
+            content: "";
+            width: 50px;
+            height: 50px;
+            background-color: #fff;
+            box-shadow: 1rem 1rem #081B3E ;
+            position: absolute;
+            left: -50px;
+            top: 176px;
+            border-radius: 10px;
+        }
+        &::after{
+            content: "";
+            width: 50px;
+            height: 50px;
+            background-color: #fff;
+            box-shadow: -0.5rem 0.5rem 0 #081B3E ;
+            position: absolute;
+            right: -50px;
+            top: 176px;
+            border-radius: 10px;
+        }
     }
 }
+#comp1-f{
+    &:checked ~ .comp__para-m, &:checked ~ .comp__para-f{
+        display: none;
+    }
+    &:checked ~ .comp__para-f{
+        display: block;
+    }
+    &:checked ~ .comp__back{
+        left: 0%;
+    }
+}
+#comp1-m{
+    &:checked ~ .comp__para-f, &:checked ~ .comp__para-b{
+        display: none;
+    }
+    &:checked ~ .comp__para-m{
+        display: block;
+    }
+    &:checked ~ .comp__back{
+        left: 33%;
+    }
+}
+#comp1-b{
+    &:checked ~ .comp__para-f, &:checked ~ .comp__para-m{
+        display: none;
+    }
+    &:checked ~ .comp__para-b{
+        display: block;
+    }
+    &:checked ~ .comp__back{
+        left: 67.1%;
+    }
+}
+
 .trend{
     &__title{
         @extend .title;

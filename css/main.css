@@ -634,6 +634,13 @@ textarea {
   margin-top: 1rem;
   margin-bottom: 2rem; }
 
+.combat__img {
+  width: 80%;
+  border-radius: 3%; }
+
+.combat__row {
+  margin-bottom: 2rem; }
+
 .table__arena {
   text-align: center; }
 
@@ -671,11 +678,37 @@ textarea {
   margin-left: 0.2rem;
   margin-right: 0.2rem; }
 
-.types__img {
-  width: 500px; }
+.type {
+  margin-top: 4rem; }
+
+.types {
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
+  .types__img {
+    width: 300px; }
+    .types__img-triangle {
+      width: 600px;
+      padding-top: 2rem; }
+  .types__subtitle {
+    margin-top: 1rem; }
+
+.morale__cont {
+  background-color: #081B3E;
+  padding: 0;
+  padding-top: 0.5rem;
+  border: 3px solid #081B3E;
+  border-radius: 10px;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem; }
 
 .morale__title {
-  font-size: 2.1rem; }
+  font-size: 2.1rem;
+  color: #fff; }
+
+.morale__para {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 0.5rem; }
 
 .aroma {
   width: 50px;
@@ -789,29 +822,124 @@ textarea {
   background-repeat: no-repeat;
   background-position: center; }
 
-.buff__row {
-  border: 2px solid #081B3E;
-  border-radius: 10px;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  padding: 0.5rem; }
+.buff {
+  margin-top: 4rem; }
+  .buff__row {
+    border: 2px solid #081B3E;
+    border-radius: 10px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem; }
+  .buff__subtitle {
+    margin-top: 0.5rem;
+    text-transform: uppercase; }
+  .buff__cont {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
 
-.buff__subtitle {
-  margin-top: 0.5rem;
-  text-transform: uppercase; }
+.comp {
+  position: relative;
+  overflow: hidden; }
+  .comp__subtitle {
+    margin-top: 2rem; }
+  .comp__para {
+    font-size: 1.3125rem;
+    text-align: center;
+    font-weight: 400;
+    color: #fff;
+    background-color: #081B3E;
+    padding: 1rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; }
+    .comp__para-f {
+      border-top-right-radius: 10px;
+      border-top-left-radius: 0px;
+      /*position: absolute;
+            bottom: -90px;*/
+      display: block; }
+    .comp__para-m {
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+      /*position: absolute;
+            bottom: -90px;*/
+      display: none; }
+    .comp__para-b {
+      border-top-right-radius: 0px;
+      border-top-left-radius: 10px;
+      /*position: absolute;
+            bottom: -90px;*/
+      display: none; }
+  .comp__img {
+    z-index: 10;
+    margin: 0;
+    padding: 0; }
+  .comp__item {
+    padding: 0; }
+  .comp__input {
+    display: none; }
+  .comp__label {
+    width: 33%;
+    margin: 0;
+    padding: 0;
+    cursor: pointer; }
+  .comp__back {
+    z-index: -1;
+    position: absolute;
+    width: 33%;
+    height: 100%;
+    left: 0;
+    background-color: #081B3E;
+    border-radius: 10px;
+    transition: 0.5s all; }
+    .comp__back::before {
+      visibility: none;
+      content: "";
+      width: 50px;
+      height: 50px;
+      background-color: #fff;
+      box-shadow: 1rem 1rem #081B3E;
+      position: absolute;
+      left: -50px;
+      top: 176px;
+      border-radius: 10px; }
+    .comp__back::after {
+      content: "";
+      width: 50px;
+      height: 50px;
+      background-color: #fff;
+      box-shadow: -0.5rem 0.5rem 0 #081B3E;
+      position: absolute;
+      right: -50px;
+      top: 176px;
+      border-radius: 10px; }
 
-.buff__cont {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+#comp1-f:checked ~ .comp__para-m, #comp1-f:checked ~ .comp__para-f {
+  display: none; }
 
-.comp__subtitle {
-  margin-top: 2rem; }
+#comp1-f:checked ~ .comp__para-f {
+  display: block; }
 
-.comp__para {
-  font-size: 1.3125rem;
-  text-align: start;
-  font-weight: 400; }
+#comp1-f:checked ~ .comp__back {
+  left: 0%; }
+
+#comp1-m:checked ~ .comp__para-f, #comp1-m:checked ~ .comp__para-b {
+  display: none; }
+
+#comp1-m:checked ~ .comp__para-m {
+  display: block; }
+
+#comp1-m:checked ~ .comp__back {
+  left: 33%; }
+
+#comp1-b:checked ~ .comp__para-f, #comp1-b:checked ~ .comp__para-m {
+  display: none; }
+
+#comp1-b:checked ~ .comp__para-b {
+  display: block; }
+
+#comp1-b:checked ~ .comp__back {
+  left: 67.1%; }
 
 .trend__name {
   text-align: start; }
