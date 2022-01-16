@@ -1,0 +1,35 @@
+@each $buff in aroma, attack-down, attack-up, chill, fear, fragile, jinx, lethal, morale-down, morale-up, poison, sleep, speed-down, speed-up, stench, stun {
+    .#{$buff}{
+        width: 50px;
+        height: 50px;
+        background-image: url(../../assets/buffs/#{$buff}.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+.buff{
+    margin-top: 4rem;
+    &__row{
+        border: 2px solid #081B3E;
+        border-radius: 10px;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        padding: 0.5rem
+    }
+    &__title{
+        @extend .title;
+    }
+    &__subtitle{
+        @extend .subtitle;
+        margin-top: 0.5rem;
+        text-transform: uppercase;
+    }
+    &__para{
+        @extend .para-centered;
+    }
+    &__cont{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

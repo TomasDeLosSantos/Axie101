@@ -1,0 +1,45 @@
+.type{
+    margin-top: 4rem;
+}
+.types{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    &__title{
+        @extend .title;
+    }
+    &__para{
+        @extend .para-centered;
+    }
+    &__img{
+        width: 300px;
+        &-triangle{
+            width: 600px;
+            padding-top: 2rem;
+        }
+    }
+    &__subtitle{
+        margin-top: 1rem;
+    }
+}
+.morale{
+    &__cont{
+        background-color: #081B3E;
+        padding: 0;
+        padding-top: 0.5rem;
+        border: 3px solid #081B3E;
+        border-radius: 10px;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;   
+    }
+    &__title{
+        @extend .subtitle;
+        font-size: 2.1rem;
+        color: #fff;
+    }
+    &__para{
+        @extend .para-centered;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 0.5rem;
+    }
+}

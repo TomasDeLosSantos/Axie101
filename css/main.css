@@ -605,6 +605,7 @@ textarea {
   padding-left: 1rem;
   padding-right: 0.5rem; }
 
+/*---- VARIABLES Y CLASES REUTILIZABLES PVP.HTML*/
 .title, .combat__title, .types__title, .buff__title, .comp__title, .trend__title {
   font-size: 2.5rem;
   text-align: start;
@@ -619,17 +620,18 @@ textarea {
   padding-left: 1rem;
   padding-right: 0.5rem; }
 
-.para-centered, .combat__para, .rewards__para, .types__para, .morale__para, .buff__para, .trend__para {
+.para-centered, .combat__para, .rewards__para, .types__para, .morale__para, .buff__para {
   font-size: 1.3125rem;
   text-align: center;
   font-weight: 400; }
 
-.subtitle, .rewards__title, .morale__title, .buff__subtitle, .comp__subtitle, .trend__name {
+.subtitle, .rewards__title, .morale__title, .buff__subtitle, .comp__subtitle {
   font-size: 1.8rem;
   text-align: center;
   font-weight: 700;
   color: #081B3E; }
 
+/*---- VARIABLES Y CLASES REUTILIZABLES PVP.HTML*/
 .combat__para {
   margin-top: 1rem;
   margin-bottom: 2rem; }
@@ -840,7 +842,8 @@ textarea {
 
 .comp {
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-top: 2rem; }
   .comp__subtitle {
     margin-top: 2rem; }
   .comp__para {
@@ -855,20 +858,14 @@ textarea {
     .comp__para-f {
       border-top-right-radius: 10px;
       border-top-left-radius: 0px;
-      /*position: absolute;
-            bottom: -90px;*/
       display: block; }
     .comp__para-m {
       border-top-right-radius: 10px;
       border-top-left-radius: 10px;
-      /*position: absolute;
-            bottom: -90px;*/
       display: none; }
     .comp__para-b {
       border-top-right-radius: 0px;
       border-top-left-radius: 10px;
-      /*position: absolute;
-            bottom: -90px;*/
       display: none; }
   .comp__img {
     z-index: 10;
@@ -914,40 +911,128 @@ textarea {
       top: 176px;
       border-radius: 10px; }
 
-#comp1-f:checked ~ .comp__para-m, #comp1-f:checked ~ .comp__para-f {
+.comp1-f:checked ~ .comp__para-m, .comp1-f:checked ~ .comp__para-f {
   display: none; }
 
-#comp1-f:checked ~ .comp__para-f {
+.comp1-f:checked ~ .comp__para-f {
   display: block; }
 
-#comp1-f:checked ~ .comp__back {
+.comp1-f:checked ~ .comp__back {
   left: 0%; }
 
-#comp1-m:checked ~ .comp__para-f, #comp1-m:checked ~ .comp__para-b {
+.comp1-m:checked ~ .comp__para-f, .comp1-m:checked ~ .comp__para-b {
   display: none; }
 
-#comp1-m:checked ~ .comp__para-m {
+.comp1-m:checked ~ .comp__para-m {
   display: block; }
 
-#comp1-m:checked ~ .comp__back {
+.comp1-m:checked ~ .comp__back {
   left: 33%; }
 
-#comp1-b:checked ~ .comp__para-f, #comp1-b:checked ~ .comp__para-m {
+.comp1-b:checked ~ .comp__para-f, .comp1-b:checked ~ .comp__para-m {
   display: none; }
 
-#comp1-b:checked ~ .comp__para-b {
+.comp1-b:checked ~ .comp__para-b {
   display: block; }
 
-#comp1-b:checked ~ .comp__back {
+.comp1-b:checked ~ .comp__back {
   left: 67.1%; }
 
-.trend__name {
-  text-align: start; }
+.comp2-f:checked ~ .comp__para-m, .comp2-f:checked ~ .comp__para-f {
+  display: none; }
 
-.trend__para {
-  font-size: 1.3125rem;
-  text-align: start;
-  font-weight: 400; }
+.comp2-f:checked ~ .comp__para-f {
+  display: block; }
+
+.comp2-f:checked ~ .comp__back {
+  left: 0%; }
+
+.comp2-m:checked ~ .comp__para-f, .comp2-m:checked ~ .comp__para-b {
+  display: none; }
+
+.comp2-m:checked ~ .comp__para-m {
+  display: block; }
+
+.comp2-m:checked ~ .comp__back {
+  left: 33%; }
+
+.comp2-b:checked ~ .comp__para-f, .comp2-b:checked ~ .comp__para-m {
+  display: none; }
+
+.comp2-b:checked ~ .comp__para-b {
+  display: block; }
+
+.comp2-b:checked ~ .comp__back {
+  left: 67.1%; }
+
+.axieCard {
+  text-align: center;
+  padding-left: 0;
+  padding-right: 0;
+  border-radius: 10px;
+  margin: 0.5rem;
+  background-color: #081B3E;
+  border: 5px solid #081B3E; }
+  .axieCard__title {
+    color: #fff;
+    padding-top: 0.5rem; }
+  .axieCard__name {
+    font-size: 1.3125rem;
+    text-align: center;
+    font-weight: 700;
+    color: #081B3E;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 0.5rem; }
+  .axieCard__bug {
+    background-color: #FE5549;
+    border: 5px solid #FE5549; }
+  .axieCard__reptile {
+    background-color: #A554D3;
+    border: 5px solid #A554D3; }
+  .axieCard__plant {
+    background-color: #58BF2D;
+    border: 5px solid #58BF2D; }
+  .axieCard__bird {
+    background-color: #FE8CBB;
+    border: 5px solid #FE8CBB; }
+
+.trend {
+  margin-top: 2rem; }
+  .trend__name {
+    font-size: 2.2rem;
+    text-align: start;
+    font-weight: 700;
+    color: #081B3E; }
+  .trend__para {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 400;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 0.5rem; }
+  .trend1 {
+    margin-top: 3rem; }
+    .trend1__para {
+      font-size: 1.3125rem;
+      padding: 1rem 0.5rem;
+      background-color: #fff;
+      border-radius: 10px; }
+  .trend2 {
+    margin-top: 3rem; }
+    .trend2__para {
+      font-size: 1.3125rem;
+      padding: 1rem 0.5rem;
+      background-color: #fff;
+      border-radius: 10px; }
+  .trend3 {
+    margin-top: 3rem;
+    margin-bottom: 3rem; }
+    .trend3__para {
+      font-size: 1.3125rem;
+      padding: 1rem 0.5rem;
+      background-color: #fff;
+      border-radius: 10px; }
 
 @media screen and (max-width: 800px) {
   .nav__li a {
@@ -1048,7 +1133,7 @@ textarea {
     .footer__axieLogo, .footer__webLogo {
       width: 80px; }
   .separator {
-    margin-top: 1rem; }
+    margin-top: 2rem; }
   .stat {
     flex-direction: column;
     align-items: center;
@@ -1066,7 +1151,53 @@ textarea {
     margin-top: 1rem;
     margin-bottom: 1rem; }
   .gral__img-para {
-    margin-bottom: 2rem; } }
+    margin-bottom: 2rem; }
+  .combat__row {
+    flex-direction: column; }
+  .combat__img {
+    width: 100%; }
+  .rewards {
+    flex-direction: column;
+    margin-bottom: 3rem; }
+    .rewards__para {
+      margin-bottom: 1rem; }
+  .type {
+    margin-top: 0; }
+  .types__img-triangle {
+    width: 100%; }
+  .morale {
+    margin: 0; }
+    .morale__cont {
+      width: 100%;
+      margin: 0;
+      margin-top: 1rem; }
+  .buff {
+    margin: 0;
+    margin-bottom: 3rem; }
+    .buff__row {
+      margin: 0.5rem 0; }
+  .comp {
+    margin-left: 0;
+    margin-right: 0; }
+    .comp__title {
+      font-size: 1.9rem;
+      left: 1rem;
+      top: -1rem; }
+  .trend1, .trend2, .trend3 {
+    margin-left: 0;
+    margin-right: 0; }
+  .axieCard {
+    height: 8.1rem; }
+    .axieCard__name {
+      height: 4.8rem; }
+  .card__vel {
+    width: 100%; }
+  .card__row {
+    margin: 0;
+    flex-direction: column; }
+    .card__row * {
+      margin-left: 0;
+      margin-right: 0; } }
 
 @media screen and (min-width: 700px) and (max-width: 800px) {
   .hero__img {
@@ -1123,11 +1254,14 @@ textarea {
     position: relative; }
     .separator h2 {
       position: relative;
+      width: 100%;
       text-align: center;
       display: inline-block;
       top: 0;
       left: 0;
       font-size: 2rem; }
+    .separator .comp__title {
+      font-size: 1.5rem; }
   .statistics__title {
     margin-bottom: 1rem; }
   .statistics__para {
@@ -1136,7 +1270,11 @@ textarea {
     font-size: 1.5rem; }
   .bans__title {
     margin-top: 1rem;
-    margin-bottom: 0; } }
+    margin-bottom: 0; }
+  .comp__img {
+    width: 100%; }
+  .trend1 {
+    margin-top: 0; } }
 
 @media screen and (max-width: 700px) {
   .hero__container {
