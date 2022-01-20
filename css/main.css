@@ -1352,7 +1352,20 @@ textarea {
     margin-right: 0; }
     .scholar__card-row {
       margin-left: 0;
-      margin-right: 0; } }
+      margin-right: 0; }
+  .breed__video {
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
+  .coins__cont {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0; }
+  .coins__row {
+    margin: 0; }
+  .tree__video {
+    width: 100%;
+    margin-bottom: 1rem; } }
 
 @media screen and (min-width: 700px) and (max-width: 800px) {
   .hero__img {
@@ -1360,7 +1373,22 @@ textarea {
     margin-left: auto;
     margin-right: auto; }
   .nav__logo, .contact__btn {
-    display: block; } }
+    display: block; }
+  .coins__row {
+    margin-top: 0; }
+  .risk__title {
+    font-size: 1.7rem;
+    left: 1rem;
+    top: -0.8rem; }
+  .stake {
+    margin: 0;
+    height: 75vh; }
+    .stake__img {
+      width: 100%; }
+    .stake__btn {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 2rem; } }
 
 @media screen and (min-width: 1000px) and (max-width: 1500px) {
   .serviceSection__title {
@@ -1442,11 +1470,43 @@ textarea {
   .hero__container {
     padding-top: 0; }
   .hero__img {
-    width: 250px; } }
+    width: 250px; }
+  .risk__title {
+    margin-bottom: 2rem; }
+  .risk__subtitle {
+    text-align: center; }
+  .risk__para {
+    text-align: center; }
+  .tree__title {
+    position: relative;
+    text-align: center;
+    left: 0;
+    top: 0;
+    background-color: transparent; }
+  .tree__para {
+    text-align: center; }
+  .stake {
+    height: 90vh; }
+    .stake__para {
+      font-size: 1rem; }
+    .stake__img {
+      display: none; }
+      .stake__img-axs {
+        display: none; }
+    .stake__btn {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 1rem; } }
 
 @media screen and (max-width: 400px) {
   .axieSection__carousel {
     width: 300px; }
   .statistics__title {
     padding: 0;
-    letter-spacing: .2rem; } }
+    letter-spacing: .2rem; }
+  .stake {
+    height: 100vh; } }
+
+@media screen and (max-width: 350px) {
+  .stake {
+    height: 150vh; } }
