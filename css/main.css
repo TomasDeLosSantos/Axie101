@@ -606,7 +606,7 @@ textarea {
   padding-right: 0.5rem; }
 
 /*---- VARIABLES Y CLASES REUTILIZABLES PVP.HTML*/
-.title, .combat__title, .types__title, .buff__title, .comp__title, .trend__title, .scholar__title {
+.title, .combat__title, .types__title, .buff__title, .comp__title, .trend__title, .scholar__title, .scholar__accor-title {
   font-size: 2.5rem;
   text-align: start;
   font-weight: 700;
@@ -1039,6 +1039,20 @@ textarea {
   text-align: start;
   font-weight: 400; }
 
+.scholar__video {
+  padding: 0;
+  box-shadow: 0rem 0rem 1rem #081B3E; }
+
+.scholar__accor {
+  border-radius: 10px;
+  /*border: 3px solid #081B3E;*/ }
+  .scholar__accor-title {
+    position: relative;
+    left: 0;
+    top: 0;
+    background-color: transparent;
+    margin: 0.5rem; }
+
 .scholar__btn {
   width: 100%;
   display: flex;
@@ -1070,6 +1084,9 @@ textarea {
 
 .guilds__img {
   width: 200px; }
+
+.accordion-item {
+  border: 3px solid #081B3E; }
 
 @media screen and (max-width: 800px) {
   .nav__li a {
@@ -1234,6 +1251,23 @@ textarea {
     flex-direction: column; }
     .card__row * {
       margin-left: 0;
+      margin-right: 0; }
+  .scholar__row {
+    margin: 0; }
+  .scholar__video {
+    margin-top: 2rem;
+    width: 100%; }
+  .scholar__title2 {
+    left: 1rem;
+    font-size: 2.1rem; }
+  .scholar__accor-title {
+    font-size: 2.1rem; }
+  .scholar__card {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0; }
+    .scholar__card-row {
+      margin-left: 0;
       margin-right: 0; } }
 
 @media screen and (min-width: 700px) and (max-width: 800px) {
@@ -1311,7 +1345,14 @@ textarea {
   .comp__img {
     width: 100%; }
   .trend1 {
-    margin-top: 0; } }
+    margin-top: 0; }
+  .scholar__accor-title {
+    font-size: 1.8rem;
+    letter-spacing: 0; }
+  .scholar__img {
+    width: 100%; }
+  .scholar__para {
+    text-align: center; } }
 
 @media screen and (max-width: 700px) {
   .hero__container {
