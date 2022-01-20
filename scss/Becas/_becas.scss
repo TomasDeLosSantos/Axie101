@@ -1,0 +1,49 @@
+.scholar{
+    &__title{
+        @extend .title;
+    }
+    &__para{
+        @include fontConfig(1.3125rem, start, 400);
+    }
+    &__subtitle{
+        @extend .subtitle;
+    }
+    &__btn{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        .btn{
+            font-size: 1.5rem;
+        }
+    }
+    &__card{
+        margin: 0.5rem;
+        padding: 0;
+        background-color: #081B3E;
+        border-radius: 10px;
+        border: 3px solid #081B3E;
+        &-subtitle{
+            @extend .subtitle;
+            color: #fff;
+            padding-top: 0.5rem;
+        }
+    }
+    &__ul{
+        background-color: #fff;
+        border-radius: 10px;
+        margin: 0;
+    }
+    &__li{
+        @extend .para-centered;
+        list-style: none;
+        padding: 0.5rem;
+    }
+}
+.guilds{
+    &__img{
+        width: 200px;
+    }
+}

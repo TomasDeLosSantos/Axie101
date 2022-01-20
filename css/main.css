@@ -606,7 +606,7 @@ textarea {
   padding-right: 0.5rem; }
 
 /*---- VARIABLES Y CLASES REUTILIZABLES PVP.HTML*/
-.title, .combat__title, .types__title, .buff__title, .comp__title, .trend__title {
+.title, .combat__title, .types__title, .buff__title, .comp__title, .trend__title, .scholar__title {
   font-size: 2.5rem;
   text-align: start;
   font-weight: 700;
@@ -620,12 +620,12 @@ textarea {
   padding-left: 1rem;
   padding-right: 0.5rem; }
 
-.para-centered, .combat__para, .rewards__para, .types__para, .morale__para, .buff__para {
+.para-centered, .combat__para, .rewards__para, .types__para, .morale__para, .buff__para, .scholar__li {
   font-size: 1.3125rem;
   text-align: center;
   font-weight: 400; }
 
-.subtitle, .rewards__title, .morale__title, .buff__subtitle, .comp__subtitle {
+.subtitle, .rewards__title, .morale__title, .buff__subtitle, .comp__subtitle, .scholar__subtitle, .scholar__card-subtitle {
   font-size: 1.8rem;
   text-align: center;
   font-weight: 700;
@@ -1033,6 +1033,43 @@ textarea {
       padding: 1rem 0.5rem;
       background-color: #fff;
       border-radius: 10px; }
+
+.scholar__para {
+  font-size: 1.3125rem;
+  text-align: start;
+  font-weight: 400; }
+
+.scholar__btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem; }
+  .scholar__btn .btn {
+    font-size: 1.5rem; }
+
+.scholar__card {
+  margin: 0.5rem;
+  padding: 0;
+  background-color: #081B3E;
+  border-radius: 10px;
+  border: 3px solid #081B3E; }
+  .scholar__card-subtitle {
+    color: #fff;
+    padding-top: 0.5rem; }
+
+.scholar__ul {
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 0; }
+
+.scholar__li {
+  list-style: none;
+  padding: 0.5rem; }
+
+.guilds__img {
+  width: 200px; }
 
 @media screen and (max-width: 800px) {
   .nav__li a {
