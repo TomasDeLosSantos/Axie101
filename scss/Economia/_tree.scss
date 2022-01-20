@@ -1,0 +1,12 @@
+.tree{
+    &__title{
+        @extend .title;
+    }
+    &__para{
+        @include fontConfig(1.3125rem, start, 400);
+    }
+    &__video{
+        padding: 0;
+        box-shadow: 0rem 0rem 1rem #081B3E;
+    }
+}

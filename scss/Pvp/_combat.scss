@@ -17,6 +17,7 @@ $axieType-color: ("bug": #FE5549, "reptile": #A554D3, "plant": #58BF2D, "bird": 
     line-height: 1;
     padding-left: 1rem;
     padding-right: 0.5rem;
+    text-transform: uppercase;
 }
 .para-centered{
     @include fontConfig(1.3125rem, center, 400);

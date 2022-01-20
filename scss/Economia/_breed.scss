@@ -1,0 +1,12 @@
+.breed{
+    &__title{
+        @extend .title;
+    }
+    &__para{
+        @extend .para-centered;
+    }
+    &__video{
+        padding: 0;
+        box-shadow: 0rem 0rem 1rem #081B3E;
+    }
+}

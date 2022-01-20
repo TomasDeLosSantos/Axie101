@@ -1,0 +1,40 @@
+.margin-b-5{
+    margin-bottom: 5rem;
+}
+.margin-t-5{
+    margin-top: 5rem;
+}
+.coins{
+    &__title{
+        @extend .title;
+    }
+    &__subtitle{
+        @extend .subtitle;
+        color: #fff;
+        padding-bottom: 0.5rem;
+    }
+    &__icon{
+        width: 4%;
+        height: 4%;
+        margin-left: 0.8rem;
+        margin-right: 0.8rem;
+        &-ron{
+            width: 2%;
+            margin-left: 0.8rem;
+            margin-right: 0.8rem;
+        }
+    }
+    &__para{
+        @extend .para-centered;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 0.5rem;
+    }
+    &__cont{
+        background-color: #081B3E;  
+        border-radius: 10px;
+        margin: 0.5rem;
+        padding: 0;
+        border: 3px solid #081B3E;
+    }
+}

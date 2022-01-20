@@ -606,7 +606,7 @@ textarea {
   padding-right: 0.5rem; }
 
 /*---- VARIABLES Y CLASES REUTILIZABLES PVP.HTML*/
-.title, .combat__title, .types__title, .buff__title, .comp__title, .trend__title, .scholar__title, .scholar__accor-title {
+.title, .combat__title, .types__title, .buff__title, .comp__title, .trend__title, .scholar__title, .scholar__accor-title, .breed__title, .coins__title, .roi__title, .risk__title, .tree__title {
   font-size: 2.5rem;
   text-align: start;
   font-weight: 700;
@@ -618,14 +618,15 @@ textarea {
   letter-spacing: .5rem;
   line-height: 1;
   padding-left: 1rem;
-  padding-right: 0.5rem; }
+  padding-right: 0.5rem;
+  text-transform: uppercase; }
 
-.para-centered, .combat__para, .rewards__para, .types__para, .morale__para, .buff__para, .scholar__li {
+.para-centered, .combat__para, .rewards__para, .types__para, .morale__para, .buff__para, .scholar__li, .breed__para, .coins__para, .stake__para {
   font-size: 1.3125rem;
   text-align: center;
   font-weight: 400; }
 
-.subtitle, .rewards__title, .morale__title, .buff__subtitle, .comp__subtitle, .scholar__subtitle, .scholar__card-subtitle {
+.subtitle, .rewards__title, .morale__title, .buff__subtitle, .comp__subtitle, .scholar__subtitle, .scholar__card-subtitle, .coins__subtitle, .stake__title {
   font-size: 1.8rem;
   text-align: center;
   font-weight: 700;
@@ -1087,6 +1088,89 @@ textarea {
 
 .accordion-item {
   border: 3px solid #081B3E; }
+
+.breed__video {
+  padding: 0;
+  box-shadow: 0rem 0rem 1rem #081B3E; }
+
+.margin-b-5 {
+  margin-bottom: 5rem; }
+
+.margin-t-5 {
+  margin-top: 5rem; }
+
+.coins__subtitle {
+  color: #fff;
+  padding-bottom: 0.5rem; }
+
+.coins__icon {
+  width: 4%;
+  height: 4%;
+  margin-left: 0.8rem;
+  margin-right: 0.8rem; }
+  .coins__icon-ron {
+    width: 2%;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem; }
+
+.coins__para {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 0.5rem; }
+
+.coins__cont {
+  background-color: #081B3E;
+  border-radius: 10px;
+  margin: 0.5rem;
+  padding: 0;
+  border: 3px solid #081B3E; }
+
+.roi__para {
+  font-size: 1.3125rem;
+  text-align: start;
+  font-weight: 400; }
+
+.risk__subtitle {
+  font-size: 1.8rem;
+  text-align: start;
+  font-weight: 700;
+  color: #081B3E; }
+
+.risk__para {
+  font-size: 1.3125rem;
+  text-align: start;
+  font-weight: 400; }
+
+.tree__para {
+  font-size: 1.3125rem;
+  text-align: start;
+  font-weight: 400; }
+
+.tree__video {
+  padding: 0;
+  box-shadow: 0rem 0rem 1rem #081B3E; }
+
+.stake {
+  height: 83vh; }
+  .stake__cont {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 50vw; }
+  .stake__title {
+    text-transform: uppercase; }
+  .stake__img {
+    width: 80%; }
+    .stake__img-axs {
+      width: 100%; }
+  .stake__btn {
+    margin-left: auto;
+    margin-right: auto; }
+  .stake__carousel {
+    height: 90%; }
 
 @media screen and (max-width: 800px) {
   .nav__li a {

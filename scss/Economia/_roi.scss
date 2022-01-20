@@ -1,0 +1,8 @@
+.roi{
+    &__title{
+        @extend .title;
+    }
+    &__para{
+        @include fontConfig(1.3125rem, start, 400);
+    }
+}

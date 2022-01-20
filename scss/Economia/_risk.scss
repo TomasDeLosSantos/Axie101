@@ -1,0 +1,12 @@
+.risk{
+    &__title{
+        @extend .title;
+    }
+    &__subtitle{
+        @include fontConfig(1.8rem, start, 700);
+        color: #081B3E;
+    }
+    &__para{
+        @include fontConfig(1.3125rem, start, 400);
+    }
+}
