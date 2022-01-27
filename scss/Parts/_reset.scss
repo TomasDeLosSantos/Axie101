@@ -20,3 +20,20 @@ h1,h2,h3,h4,h5,h6{
 .logo{
     width: 6rem;
 }
+.toast{
+    background-color: #C23A3A;
+    border-radius: 10px;
+    border: 3px solid #C23A3A;
+    &-container{
+        z-index: 100;
+    }
+    &-header{
+        background-color: transparent;
+        color: #fff;
+    }
+    &-body{
+        background-color: #fff;
+        border-radius: 10px;
+        color: #081B3E;
+    }
+}
