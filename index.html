@@ -35,49 +35,50 @@
 
     <!-- Modal -->
     <div class="modal fade" id="scholarForm" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Sé parte de nuestro equipo</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Sé parte de nuestro equipo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <fieldset>
+                            <input class="form__name" type="text" name="nombre" id="" placeholder="Nombre">
+
+                            <input class="form__age" type="number" name="edad" id="" placeholder="Edad">
+
+                            <input class="form__genre" type="text" name="genero" id="" placeholder="Género">
+
+                            <div class="form__exp">
+                                <label for="becado">Tuvo una beca anteriormente:</label>
+                                <div class="form__exp-yes">
+                                    <b>Si</b><input type="radio" name="becado" value="si">
+                                </div>
+                                <div class="form__exp-no">
+                                    <b>No</b><input type="radio" name="becado" value="no">
+                                </div>
+                            </div>
+
+                            <input class="form__email" type="email" name="mail" id="" placeholder="Ingrese su email">
+
+                            <input class="form__dc" type="text" name="discord" id="" placeholder="Ingrese su discord">
+
+                            <textarea class="form__text" name="experiencia" id="" cols="30" rows="5" placeholder="Experiencia en Axie u otros juegos de estrategia o cartas"></textarea>
+
+                            <div class="form__btns">
+                                <input class="form__reset" type="reset" value="Borrar">
+                                <input class="form__submit" type="submit" value="Enviar">
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
         </div>
-        <div class="modal-body">
-            <form action="">
-                <fieldset>
-                    <input class="form__name" type="text" name="nombre" id="" placeholder="Nombre">
-
-                    <input class="form__age" type="number" name="edad" id="" placeholder="Edad">
-
-                    <input class="form__genre" type="text" name="genero" id="" placeholder="Género">
-
-                    <div class="form__exp">
-                        <label for="becado">Tuvo una beca anteriormente:</label>
-                        <div class="form__exp-yes">
-                            <b>Si</b><input type="radio" name="becado" value="si">
-                        </div>
-                        <div class="form__exp-no">
-                            <b>No</b><input type="radio" name="becado" value="no">
-                        </div>
-                    </div>
-
-                    <input class="form__email" type="email" name="mail" id="" placeholder="Ingrese su email">
-
-                    <input class="form__dc" type="text" name="discord" id="" placeholder="Ingrese su discord">
-
-                    <textarea class="form__text" name="experiencia" id="" cols="30" rows="5" placeholder="Experiencia en Axie u otros juegos de estrategia o cartas"></textarea>
-
-                    <div class="form__btns">
-                        <input class="form__reset" type="reset" value="Borrar">
-                        <input class="form__submit" type="submit" value="Enviar">
-                    </div>
-                </fieldset>
-            </form>
-        </div>
-      </div>
     </div>
-  </div>
     <!-- Modal -->
     
+    <!-- Toast -->
     <div class="toast-container position-fixed bottom-0 end-0 p-3">
         <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
             <div class="toast-header">
@@ -98,7 +99,8 @@
             </div>
         </div>
     </div>
-    
+    <!-- Toast -->
+
     <main class="container-fluid">
         <section class="hero__container">
             <div class="container-lg">
@@ -113,7 +115,6 @@
                 </article>
             </div>
         </section>
-        
         
         <section class="gameSection container-lg">
             <article class="row">
