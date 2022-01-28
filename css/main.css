@@ -61,6 +61,7 @@ header {
 
 .nav__logo {
   width: 70px;
+  height: 45px;
   margin-right: 2rem;
   margin-left: 1rem; }
 
@@ -183,6 +184,9 @@ textarea {
       justify-content: center;
       align-items: center;
       width: 10rem; }
+    .footer__axieLogo, .footer__webLogo {
+      width: 96px;
+      height: 60px; }
   .footer__web {
     border-bottom: none; }
   .footer__axieList, .footer__webList {
@@ -223,6 +227,9 @@ textarea {
   color: #fff;
   margin-top: auto;
   margin-bottom: auto; }
+
+.hero__img {
+  size: auto; }
 
 .hero__btn {
   padding: 0.5rem 1rem 0.5rem 1rem;
