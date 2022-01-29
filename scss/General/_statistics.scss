@@ -38,46 +38,24 @@
     flex-wrap: wrap;
     margin: 2.5rem 0;
     &__subtitle{
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        background-color: #081B3E;
         display: flex;
         justify-content: center;
         align-content: center;
         padding-top: 0.5rem;
-        margin-bottom: 0;
-        padding-bottom: 0;
-        border: 3px solid #081B3E;
-        border-bottom: none;
-        &::before{
-            z-index: -5;
-            width: 250px;
-            height: 50px;
-            content: '';
-            position: absolute;
-            left: 0px;
-            top: 50px;
-            background-color: #081B3E;
-        }
-        h4{
-            font-size: 1.8rem;
-            color: #fff;
-        }
+        color: #fff;
     }
     &__para{
         background-color: #fff;
+        border-radius: 10px;
         text-align: center;
         font-size: 1.3125rem;
         padding: 1.2rem 0.5rem 0.5rem 0.5rem;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
-        border-bottom-left-radius: 15px;
-        border-bottom-right-radius: 15px;
-        border: 3px solid #081B3E;
         height: 9.1533rem;
     }
     &__items{
-        border-radius: 15px;
+        background-color: #081B3E;
+        border: 3px solid #081B3E;
+        border-radius: 10px;
         padding: 0;
         position: relative;
         width: 250px;

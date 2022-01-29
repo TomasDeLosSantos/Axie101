@@ -55,9 +55,6 @@
         &__data{
             text-align: center;
         }
-        &__img{
-            width: 100vw;
-        }
     }
     .gameSection{
         height: auto;
@@ -161,8 +158,13 @@
         margin: 1rem 0 0 0;
     }
     .ban{
+        &__row{
+            padding: 0;
+            margin: 0;
+        }
         &__item{
-            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
         }
     }
     .adventure__img{
@@ -297,9 +299,10 @@
 }
 @media screen and (min-width: 700px) and (max-width: 800px) {
     .hero__img{
-        width: auto;
+        width: 624px;
         margin-left: auto;
         margin-right: auto;
+        padding: 0;
     }
     .nav__logo, .contact__btn{
         display: block;
@@ -329,8 +332,33 @@
         }
     }
 }
-@media screen and (min-width: 1000px) and (max-width: 1500px) {
+@media screen and (min-width: 1000px) and (max-width: 1100px) {
+    .hero{
+        &__img{
+            width: 50vw;
+        }
+    }
+    .gameSection{
+        &__title{
+            margin-top: 0;
+        }
+        &__title{
+            font-size: 2.5rem;
+        }
+        &__video{
+            width: 450px;
+        }
+    }
+    .axieSection{
+        height: 90vh;
+    }
+    .example{
+        &__cont, &__img{
+            width: 20vw;
+        }
+    }
     .serviceSection{
+        height: 65vh;
         &__title{
             font-size: 2rem;
         }
@@ -340,6 +368,70 @@
         &__btn{
             font-size: 1.5rem;
         }
+        &__pvp,&__econ, &__becas{
+            height: 320px;
+        } 
+    }
+    .stat{
+        &__items{
+            width: 210px;
+        }
+        &__para{
+            padding: 0.5rem;
+        }
+    }
+    .ban{
+        &__item{
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+    .comp{
+        &__title{
+            font-size: 2rem;
+        }
+    }
+    .axieCard{
+        &__name{
+            height: 4.8rem;
+        }
+    }
+    .tren1__para, .trend2__para, .trend3__para{
+        font-size: 1.23rem;
+    }
+    .card__vel{
+        .axieCard__title{
+            font-size: 1.25rem;
+        }
+    }
+    .scholar{
+        &__ul{
+            height: 411px;
+        }
+    }
+    .breed{
+        &__video{
+            width: 450px;
+        }
+    }
+    .risk{
+        &__title{
+            font-size: 2rem;
+        }
+    }
+    .tree{
+        &__row{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+    }
+    .stake{
+        height: 95vh;
+    }
+    .axs__para{
+        height: 205px;
     }
 }
 @media screen and (min-width: 801px) {
@@ -349,7 +441,7 @@
         }
     }
     .serviceSection{
-        height: 50vh;
+        height: 63vh;
         background-color: #006CFF;
         &__carousel{
             display: none;
@@ -454,9 +546,6 @@
     .hero{
         &__container{
             padding-top: 0;
-        }
-        &__img{
-            width: 250px;
         }
     }
     .risk{

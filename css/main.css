@@ -445,42 +445,22 @@ textarea {
   flex-wrap: wrap;
   margin: 2.5rem 0; }
   .stat__subtitle {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    background-color: #081B3E;
     display: flex;
     justify-content: center;
     align-content: center;
     padding-top: 0.5rem;
-    margin-bottom: 0;
-    padding-bottom: 0;
-    border: 3px solid #081B3E;
-    border-bottom: none; }
-    .stat__subtitle::before {
-      z-index: -5;
-      width: 250px;
-      height: 50px;
-      content: '';
-      position: absolute;
-      left: 0px;
-      top: 50px;
-      background-color: #081B3E; }
-    .stat__subtitle h4 {
-      font-size: 1.8rem;
-      color: #fff; }
+    color: #fff; }
   .stat__para {
     background-color: #fff;
+    border-radius: 10px;
     text-align: center;
     font-size: 1.3125rem;
     padding: 1.2rem 0.5rem 0.5rem 0.5rem;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    border: 3px solid #081B3E;
     height: 9.1533rem; }
   .stat__items {
-    border-radius: 15px;
+    background-color: #081B3E;
+    border: 3px solid #081B3E;
+    border-radius: 10px;
     padding: 0;
     position: relative;
     width: 250px; }
@@ -1228,8 +1208,6 @@ textarea {
     margin: 1.5rem 0rem 0rem 0rem; }
   .hero__data {
     text-align: center; }
-  .hero__img {
-    width: 100vw; }
   .gameSection {
     height: auto; }
     .gameSection div article {
@@ -1304,8 +1282,12 @@ textarea {
     margin: 0; }
   .exp {
     margin: 1rem 0 0 0; }
+  .ban__row {
+    padding: 0;
+    margin: 0; }
   .ban__item {
-    width: 100%; }
+    margin-left: 0;
+    margin-right: 0; }
   .adventure__img {
     margin-top: 1rem;
     margin-bottom: 1rem; }
@@ -1390,9 +1372,10 @@ textarea {
 
 @media screen and (min-width: 700px) and (max-width: 800px) {
   .hero__img {
-    width: auto;
+    width: 624px;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    padding: 0; }
   .nav__logo, .contact__btn {
     display: block; }
   .coins__row {
@@ -1411,19 +1394,65 @@ textarea {
       margin-right: auto;
       margin-top: 2rem; } }
 
-@media screen and (min-width: 1000px) and (max-width: 1500px) {
-  .serviceSection__title {
+@media screen and (min-width: 1000px) and (max-width: 1100px) {
+  .hero__img {
+    width: 50vw; }
+  .gameSection__title {
+    margin-top: 0; }
+  .gameSection__title {
+    font-size: 2.5rem; }
+  .gameSection__video {
+    width: 450px; }
+  .axieSection {
+    height: 90vh; }
+  .example__cont, .example__img {
+    width: 20vw; }
+  .serviceSection {
+    height: 65vh; }
+    .serviceSection__title {
+      font-size: 2rem; }
+    .serviceSection__para {
+      font-size: 1.2rem; }
+    .serviceSection__btn {
+      font-size: 1.5rem; }
+    .serviceSection__pvp, .serviceSection__econ, .serviceSection__becas {
+      height: 320px; }
+  .stat__items {
+    width: 210px; }
+  .stat__para {
+    padding: 0.5rem; }
+  .ban__item {
+    margin-left: 0;
+    margin-right: 0; }
+  .comp__title {
     font-size: 2rem; }
-  .serviceSection__para {
-    font-size: 1.2rem; }
-  .serviceSection__btn {
-    font-size: 1.5rem; } }
+  .axieCard__name {
+    height: 4.8rem; }
+  .tren1__para, .trend2__para, .trend3__para {
+    font-size: 1.23rem; }
+  .card__vel .axieCard__title {
+    font-size: 1.25rem; }
+  .scholar__ul {
+    height: 411px; }
+  .breed__video {
+    width: 450px; }
+  .risk__title {
+    font-size: 2rem; }
+  .tree__row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem; }
+  .stake {
+    height: 95vh; }
+  .axs__para {
+    height: 205px; } }
 
 @media screen and (min-width: 801px) {
   .axieSection__carousel {
     display: none; }
   .serviceSection {
-    height: 50vh;
+    height: 63vh;
     background-color: #006CFF; }
     .serviceSection__carousel {
       display: none; } }
@@ -1490,8 +1519,6 @@ textarea {
 @media screen and (max-width: 700px) {
   .hero__container {
     padding-top: 0; }
-  .hero__img {
-    width: 250px; }
   .risk__title {
     margin-bottom: 2rem; }
   .risk__subtitle {
