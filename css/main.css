@@ -1208,6 +1208,10 @@ textarea {
     margin: 1.5rem 0rem 0rem 0rem; }
   .hero__data {
     text-align: center; }
+  .hero__img {
+    width: 250px;
+    margin: auto;
+    padding-top: 3rem; }
   .gameSection {
     height: auto; }
     .gameSection div article {
@@ -1372,10 +1376,11 @@ textarea {
 
 @media screen and (min-width: 700px) and (max-width: 800px) {
   .hero__img {
-    width: 624px;
+    width: 450px;
     margin-left: auto;
     margin-right: auto;
-    padding: 0; }
+    padding: 0;
+    padding-top: 5rem; }
   .nav__logo, .contact__btn {
     display: block; }
   .coins__row {
@@ -1552,11 +1557,13 @@ textarea {
     height: 150vh; }
   .separator .comp__title {
     font-size: 1.2rem; }
-  .hero__img {
-    display: none; }
   .hero__title {
     margin-top: 3rem; } }
 
 @media screen and (min-width: 1401px) {
   .serviceSection {
     height: auto; } }
+
+@media screen and (max-height: 481px) {
+  .hero__img {
+    display: none; } }

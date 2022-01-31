@@ -55,6 +55,11 @@
         &__data{
             text-align: center;
         }
+        &__img{
+            width: 250px;
+            margin: auto;
+            padding-top: 3rem;
+        }
     }
     .gameSection{
         height: auto;
@@ -299,10 +304,11 @@
 }
 @media screen and (min-width: 700px) and (max-width: 800px) {
     .hero__img{
-        width: 624px;
+        width: 450px;
         margin-left: auto;
         margin-right: auto;
         padding: 0;
+        padding-top: 5rem;
     }
     .nav__logo, .contact__btn{
         display: block;
@@ -598,9 +604,6 @@
         }
     }
     .hero{
-        &__img{
-            display: none;
-        }
         &__title{
             margin-top: 3rem;
         }
@@ -609,5 +612,12 @@
 @media screen and (min-width: 1401px) {
     .serviceSection{
         height: auto;
+    }
+}
+@media screen and (max-height: 481px) {
+    .hero{
+        &__img{
+            display: none;
+        }
     }
 }
