@@ -1394,21 +1394,30 @@ textarea {
       margin-right: auto;
       margin-top: 2rem; } }
 
+@media screen and (min-width: 801px) {
+  .axieSection__carousel {
+    display: none; }
+  .serviceSection {
+    height: 63vh;
+    background-color: #006CFF; }
+    .serviceSection__carousel {
+      display: none; } }
+
 @media screen and (min-width: 1000px) and (max-width: 1400px) {
-  .hero__img {
-    /*width: 50vw;*/ }
-  .gameSection__title {
-    margin-top: 0; }
-  .gameSection__title {
-    font-size: 2.5rem; }
-  .gameSection__video {
-    width: 450px; }
+  .gameSection {
+    height: 75vh; }
+    .gameSection__title {
+      margin-top: 0; }
+    .gameSection__title {
+      font-size: 2.5rem; }
+    .gameSection__video {
+      width: 450px; }
   .axieSection {
-    height: 90vh; }
+    height: 115vh; }
   .example__cont, .example__img {
     width: 20vw; }
   .serviceSection {
-    height: 65vh; }
+    height: 78vh; }
     .serviceSection__title {
       font-size: 2rem; }
     .serviceSection__para {
@@ -1444,32 +1453,9 @@ textarea {
     align-items: center;
     margin-bottom: 2rem; }
   .stake {
-    height: 95vh; }
-  .axs__para {
+    height: 120vh; }
+  .axs__para, .slp__para {
     height: 205px; } }
-
-@media screen and (min-width: 801px) {
-  .axieSection__carousel {
-    display: none; }
-  .serviceSection {
-    height: 63vh;
-    background-color: #006CFF; }
-    .serviceSection__carousel {
-      display: none; } }
-
-@media screen and (max-height: 650px) {
-  .serviceSection__title {
-    font-size: 2rem; }
-  .serviceSection__btn, .serviceSection__para {
-    font-size: 0.8rem; }
-  .serviceSection__pvp, .serviceSection__econ, .serviceSection__becas {
-    height: 75vw; } }
-
-@media screen and (max-height: 500px) {
-  .hero__img {
-    display: none; }
-  .hero__title {
-    margin-top: 3rem; } }
 
 @media screen and (min-width: 992px) {
   .navbar-brand {
@@ -1553,10 +1539,24 @@ textarea {
     padding: 0;
     letter-spacing: .2rem; }
   .stake {
-    height: 100vh; } }
+    height: 100vh; }
+  .serviceSection__title {
+    font-size: 2rem; }
+  .serviceSection__btn, .serviceSection__para {
+    font-size: 0.8rem; }
+  .serviceSection__pvp, .serviceSection__econ, .serviceSection__becas {
+    height: 75vw; } }
 
 @media screen and (max-width: 350px) {
   .stake {
     height: 150vh; }
   .separator .comp__title {
-    font-size: 1.2rem; } }
+    font-size: 1.2rem; }
+  .hero__img {
+    display: none; }
+  .hero__title {
+    margin-top: 3rem; } }
+
+@media screen and (min-width: 1401px) {
+  .serviceSection {
+    height: auto; } }

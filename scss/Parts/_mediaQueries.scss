@@ -332,13 +332,23 @@
         }
     }
 }
-@media screen and (min-width: 1000px) and (max-width: 1400px) {
-    .hero{
-        &__img{
-            /*width: 50vw;*/
+@media screen and (min-width: 801px) {
+    .axieSection{
+        &__carousel{
+            display: none;
         }
     }
+    .serviceSection{
+        height: 63vh;
+        background-color: #006CFF;
+        &__carousel{
+            display: none;
+        }
+    }
+}
+@media screen and (min-width: 1000px) and (max-width: 1400px) {
     .gameSection{
+        height: 75vh;
         &__title{
             margin-top: 0;
         }
@@ -350,7 +360,7 @@
         }
     }
     .axieSection{
-        height: 90vh;
+        height: 115vh;
     }
     .example{
         &__cont, &__img{
@@ -358,7 +368,7 @@
         }
     }
     .serviceSection{
-        height: 65vh;
+        height: 78vh;
         &__title{
             font-size: 2rem;
         }
@@ -428,47 +438,10 @@
         }
     }
     .stake{
-        height: 95vh;
+        height: 120vh;
     }
-    .axs__para{
+    .axs__para, .slp__para{
         height: 205px;
-    }
-}
-@media screen and (min-width: 801px) {
-    .axieSection{
-        &__carousel{
-            display: none;
-        }
-    }
-    .serviceSection{
-        height: 63vh;
-        background-color: #006CFF;
-        &__carousel{
-            display: none;
-        }
-    }
-}
-@media screen and (max-height: 650px) {
-    .serviceSection{
-        &__title{
-            font-size: 2rem;
-        }
-        &__btn, &__para{
-            font-size: 0.8rem;
-        }
-        &__pvp, &__econ, &__becas{
-            height: 75vw;
-        }
-    }
-}
-@media screen and (max-height: 500px) {
-    .hero{
-        &__img{
-            display: none;
-        }
-        &__title{
-            margin-top: 3rem;
-        }
     }
 }
 @media screen and (min-width: 992px) {
@@ -603,6 +576,17 @@
     .stake{
         height: 100vh;
     }
+    .serviceSection{
+        &__title{
+            font-size: 2rem;
+        }
+        &__btn, &__para{
+            font-size: 0.8rem;
+        }
+        &__pvp, &__econ, &__becas{
+            height: 75vw;
+        }
+    }
 }
 @media screen and (max-width: 350px) {
     .stake{
@@ -612,5 +596,18 @@
         .comp__title{
             font-size: 1.2rem;
         }
+    }
+    .hero{
+        &__img{
+            display: none;
+        }
+        &__title{
+            margin-top: 3rem;
+        }
+    }
+}
+@media screen and (min-width: 1401px) {
+    .serviceSection{
+        height: auto;
     }
 }
