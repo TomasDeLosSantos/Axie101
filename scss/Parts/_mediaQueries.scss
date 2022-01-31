@@ -332,10 +332,10 @@
         }
     }
 }
-@media screen and (min-width: 1000px) and (max-width: 1100px) {
+@media screen and (min-width: 1000px) and (max-width: 1400px) {
     .hero{
         &__img{
-            width: 50vw;
+            /*width: 50vw;*/
         }
     }
     .gameSection{

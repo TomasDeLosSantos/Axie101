@@ -1394,9 +1394,9 @@ textarea {
       margin-right: auto;
       margin-top: 2rem; } }
 
-@media screen and (min-width: 1000px) and (max-width: 1100px) {
+@media screen and (min-width: 1000px) and (max-width: 1400px) {
   .hero__img {
-    width: 50vw; }
+    /*width: 50vw;*/ }
   .gameSection__title {
     margin-top: 0; }
   .gameSection__title {
